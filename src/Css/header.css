@@ -1,0 +1,16 @@
+.map-info {
+    max-width: 265px;
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 765px) {
+    .hidden{
+        display: none;
+    }
+}
+@media (min-width: 765px) {
+    .hidden-small{
+        display: none;
+    }
+}
