@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import photo1 from "../assets/SliderPhotos/photo1.jpg"
+import photo2 from "../assets/SliderPhotos/photo2.jpg"
+import photo3 from "../assets/SliderPhotos/photo3.jpg"
+import photo4 from "../assets/SliderPhotos/photo4.jpg"
+import photo5 from "../assets/SliderPhotos/photo5.jpg"
+import photo6 from "../assets/SliderPhotos/photo6.jpg"
+
 
 export default function SliderPhotos() {
     const [index, setIndex] = useState(0);
@@ -15,12 +21,24 @@ export default function SliderPhotos() {
             alt: 'Image 1',
         },
         {
-            src: photo1,
+            src: photo2,
             alt: 'Image 2',
         },
         {
-            src: photo1,
+            src: photo3,
             alt: 'Image 3',
+        },
+        {
+            src: photo4,
+            alt: 'Image 4',
+        },
+        {
+            src: photo5,
+            alt: 'Image 5',
+        },
+        {
+            src: photo6,
+            alt: 'Image 6',
         }
     ];
 

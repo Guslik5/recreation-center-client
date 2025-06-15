@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import vkIcon from "../assets/vkIcon.png"
+import avitoIcon from "../assets/avitoIcon.png"
 import whatsAppIcon from "../assets/whatsappIcon.png"
 import tgIcon from "../assets/tgIcon.png"
 import {data} from "react-router-dom";
@@ -10,15 +10,18 @@ import mapIcon from "../assets/map-icon.png";
 export const Footer = () => {
     const data = [
         {
-            href: "https://vk.com/audios83414367?block=my_playlists&section=all",
-            image: vkIcon
+            href: "https://www.avito.ru/brands/a52062511cb77b3f403f4cfba6d3a153/all?gdlkerfdnwq=101&shopId=6024799&page_from=from_item_card&iid=4455398072&sellerId=ab4e7fff2e4cb9ba2175940b2f685216",
+            alt: "Вконтакте",
+            image: avitoIcon
         },
         {
-            href: "https://t.me/domapetrov",
+            href: "https://t.me/domabane",
+            alt: "Телеграм",
             image: tgIcon
         },
         {
-            href: "https://vk.com/audios83414367?block=my_playlists&section=all",
+            href: "https://wa.me/79119688269",
+            alt: "Вотс апп",
             image: whatsAppIcon
         }
     ]
@@ -46,7 +49,7 @@ export const Footer = () => {
                                     >
                                         <img
                                             src={item.image}
-                                            alt="ВКонтакте"
+                                            alt={item.alt}
                                             style={{width: '32px', height: '32px'}} // Настройте размеры
                                         />
                                     </a>
@@ -59,10 +62,10 @@ export const Footer = () => {
                         База отдыха «База БАРецкий» <br/> Официальный сайт. <br/>
                         © 2025.
                     </Col>
-                    <Col>
+                    <Col style={{minWidth: "190px"}}>
                         <a className="text-decoration-none text-white" href="tel:+79123456789">
                             <img src={phoneIcon} alt="Позвонить" width="20" height="20"/>
-                            +7 (912) 345-67-89
+                            +7 (911) 968-82-69
                         </a>
                     </Col>
                     <Col>

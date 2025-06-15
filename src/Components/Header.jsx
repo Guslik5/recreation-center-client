@@ -21,7 +21,7 @@ export default function Header() {
                 <Navbar.Text>
                     <a className="text-decoration-none text-white" href="tel:+79123456789">
                         <img src={phoneIcon} alt="Позвонить" width="20" height="20"/>
-                        +7 (912) 345-67-89
+                        +7 (911) 968-82-69
                     </a>
                 </Navbar.Text>
                 <Navbar.Text className="hidden">
@@ -37,7 +37,7 @@ export default function Header() {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav
                     className="mx-4 d-flex flex-column flex-lg-row align-items-start align-items-lg-center"> {/* Условное расположение */}
-                    <Link to="/" className="nav-link text-white mx-2">Главная</Link>
+                    <button className="nav-link btn btn-link text-white mx-2 p-0">Главная</button>
                     <button
                         className="nav-link btn btn-link text-white mx-2"
                         onClick={() => handleScrollToHouses('houses-section')}
