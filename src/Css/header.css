@@ -4,13 +4,22 @@
     overflow-wrap: break-word;
 }
 
+.logo-container {
+    width: 150px;
+
+}
+
 @media (max-width: 765px) {
     .hidden{
         display: none;
+    }
+    .logo-container {
+        width: 100px;
     }
 }
 @media (min-width: 765px) {
     .hidden-small{
         display: none;
     }
+
 }

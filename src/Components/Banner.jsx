@@ -9,30 +9,31 @@ export const Banner = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        formData.append("access_key", "eb76041c-ff7f-4ba8-bfdb-3609a3b144dc");
-
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
+        console.log(json);
 
         try {
-            const res = await fetch("https://api.web3forms.com/submit", {
+            console.log("запрос пошел");
+            const res = await fetch("https://smartforms.dev/submit/684f2dfec184545ccc0bac53", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json"
+                    "Content-Type": "application/json",  // SmartForms принимает JSON
+                    "Accept": "application/json"  // Желательно указать
                 },
                 body: json
             });
+            console.log("запрос прошел");
 
-            const data = await res.json();
+            const data = await res.json();  //  Предполагаем, что SmartForms возвращает JSON
 
-            if (data.success) {
+            if (res.ok) { //  Проверка на res.ok более надежна
                 console.log("Success", data);
                 alert("Форма успешно отправлена!");
                 setFormNumber("");
             } else {
                 console.error("Ошибка при отправке", data);
-                alert("Ошибка при отправке формы, позвоните по телефону");
+                alert("Ошибка при отправке формы: " + res.statusText);  // Добавил statusText
             }
 
         } catch (error) {
@@ -40,7 +41,6 @@ export const Banner = () => {
             alert("Ошибка сети: " + error.message);
         }
     };
-
     return (
         <Card className="bg-dark text-white rounded-0 border-0">
             <Card.Img src={bannerImg} alt="Card image" />
@@ -51,23 +51,19 @@ export const Banner = () => {
                     </Card.Text>
                     <Card.Title className="fs-1">База отдыха БАРецкий</Card.Title>
                 </div>
-                <div className="w-100 d-flex flex-column align-items-center">
-                    <Card.Text className="w-75 fs-3 custom-text-centre hidden text-centre">
-                        Наша база отдыха предлагает 4 уютных домика для отдыха, баню для релаксации,
-                        детскую площадку с батутом, аренду квадроциклов и мото техники для активного время провождения.
-                    </Card.Text>
+                <div className="w-100 d-flex flex-column align-items-center"><Card.Text className="w-75 fs-3 custom-text-centre hidden text-centre">
+                    Наша база отдыха предлагает 4 уютных домика для отдыха, баню для релаксации,
+                    детскую площадку с батутом, аренду квадроциклов и мото техники для активного время провождения.
+                </Card.Text>
 
                     <Form className="d-flex align-items-center bg-white rounded-3 w-75 mb-5 p-1" onSubmit={onSubmit}>
-                        {/* Скрытое поле email для работы web3form, без email не работает, тк требует документация*/}
-                        <input type="hidden" name="email" value="template@mail.ru" />
-
                         <Form.Label className="text-black m-0 mx-2 hidden">Телефон:</Form.Label>
                         <Form.Group className="flex-grow-1" controlId="formPhone">
                             <Form.Control
                                 className="custom-change-fs"
                                 type="tel"
                                 placeholder="Введите номер телефона"
-                                name="phone"
+                                name="tel" // Заменили name="phone" на name="tel", в соответствии с документацией SmartForms
                                 value={formNumber}
                                 onChange={(e) => setFormNumber(e.target.value)}
                                 required

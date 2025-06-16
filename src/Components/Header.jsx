@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import phoneIcon from '../assets/phone-icon.png'
 import mapIcon from '../assets/map-icon.png'
 import "../Css/header.css"
+import logoImg from '../assets/logobar.png'
 
 export default function Header() {
 
@@ -17,7 +18,9 @@ export default function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#808080" }} className="py-2">
             <div className="d-flex w-100 align-items-center justify-content-around"> {/* Шапка для больших экранов */}
-                <Navbar.Brand className="mx-3">Logo</Navbar.Brand>
+                <Navbar.Brand className="mx-3" style={{padding:'0'}}>
+                    <img src={logoImg} alt="logo" className="logo-container" />
+                </Navbar.Brand>
                 <Navbar.Text>
                     <a className="text-decoration-none text-white" href="tel:+79123456789">
                         <img src={phoneIcon} alt="Позвонить" width="20" height="20"/>

@@ -3,9 +3,9 @@ import {Col, Container, Row} from "react-bootstrap";
 import avitoIcon from "../assets/avitoIcon.png"
 import whatsAppIcon from "../assets/whatsappIcon.png"
 import tgIcon from "../assets/tgIcon.png"
-import {data} from "react-router-dom";
 import phoneIcon from "../assets/phone-icon.png";
 import mapIcon from "../assets/map-icon.png";
+import logoImg from "../assets/logobar.png";
 
 export const Footer = () => {
     const data = [
@@ -34,7 +34,7 @@ export const Footer = () => {
             <Container fluid >
                 <Row className="d-flex justify-content-between align-items-center p-4" style={{ backgroundColor: "#808080" }}>
                     <Col>
-                        Logo
+                        <img src={logoImg} alt="logo" className="logo-container" />
                     </Col>
                     <Col>
                         {data.map((item) => {
