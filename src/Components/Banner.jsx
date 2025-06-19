@@ -14,7 +14,7 @@ export const Banner = () => {
         console.log(json);
 
         try {
-            const res = await fetch("https://smartforms.dev/submit/684f2dfec184545ccc0bac53", {
+            const res = await fetch("https://smartforms.dev/submit/685415abc184545ccc0bba83", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
