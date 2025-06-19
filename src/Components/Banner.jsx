@@ -14,20 +14,18 @@ export const Banner = () => {
         console.log(json);
 
         try {
-            console.log("запрос пошел");
             const res = await fetch("https://smartforms.dev/submit/684f2dfec184545ccc0bac53", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json",  // SmartForms принимает JSON
-                    "Accept": "application/json"  // Желательно указать
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
                 },
                 body: json
             });
-            console.log("запрос прошел");
 
-            const data = await res.json();  //  Предполагаем, что SmartForms возвращает JSON
+            const data = await res.json();
 
-            if (res.ok) { //  Проверка на res.ok более надежна
+            if (res.ok) {
                 console.log("Success", data);
                 alert("Форма успешно отправлена!");
                 setFormNumber("");
@@ -55,8 +53,7 @@ export const Banner = () => {
                     Наша база отдыха предлагает 4 уютных домика для отдыха, баню для релаксации,
                     детскую площадку с батутом, аренду квадроциклов и мото техники для активного время провождения.
                 </Card.Text>
-
-                    <Form className="d-flex align-items-center bg-white rounded-3 w-75 mb-5 p-1" onSubmit={onSubmit}>
+                    <Form action="https://smartforms.dev/submit/684f2dfec184545ccc0bac53" method="POST" className="d-flex align-items-center bg-white rounded-3 w-75 mb-5 p-1" >
                         <Form.Label className="text-black m-0 mx-2 hidden">Телефон:</Form.Label>
                         <Form.Group className="flex-grow-1" controlId="formPhone">
                             <Form.Control
