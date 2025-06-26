@@ -53,7 +53,7 @@ export const Banner = () => {
                     Наша база отдыха предлагает 4 уютных домика для отдыха, баню для релаксации,
                     детскую площадку с батутом, аренду квадроциклов и мото техники для активного время провождения.
                 </Card.Text>
-                    <Form action="https://smartforms.dev/submit/684f2dfec184545ccc0bac53" method="POST" className="d-flex align-items-center bg-white rounded-3 w-75 mb-5 p-1" >
+                    <Form action="https://smartforms.dev/submit/685415abc184545ccc0bba83" method="POST" className="d-flex align-items-center bg-white rounded-3 w-75 mb-5 p-1" >
                         <Form.Label className="text-black m-0 mx-2 hidden">Телефон:</Form.Label>
                         <Form.Group className="flex-grow-1" controlId="formPhone">
                             <Form.Control
