@@ -6,8 +6,8 @@ import image2 from "../assets/Baretsky/photo2.jpg"
 export const Baretsky = () => {
     return (
         <>
-            <Container>
-                <Row className="m-5">
+            <Container className="px-3">
+                <Row className="my-5 mx-0 g-4 align-items-center">
                     <Col md={4}>
                         <Image src={image1} alt="Барецкий 1" width="100%" rounded/>
                     </Col>

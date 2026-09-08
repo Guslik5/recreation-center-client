@@ -1,3 +1,10 @@
-.custom-card-w{
+.custom-card-w {
     min-width: 300px;
+}
+
+@media (min-width: 992px) {
+    .row-cols-lg-5 > * {
+        flex: 0 0 auto;
+        width: 20%;
+    }
 }

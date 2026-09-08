@@ -1,0 +1,58 @@
+/* Footer styling */
+.custom-footer {
+    background-color: #1a1e22;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.06);
+}
+
+.footer-social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.footer-social-btn:hover {
+    background: rgba(35, 243, 35, 0.2);
+    border-color: #23F323;
+    transform: translateY(-2px);
+}
+
+.footer-phone-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.84rem;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-phone-link:hover {
+    color: #23F323;
+}
+
+.footer-address {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.45;
+    max-width: 250px;
+}

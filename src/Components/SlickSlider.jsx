@@ -114,11 +114,19 @@ export function ReactSlickSlider() {
 
     return (
         <StyledSlickSlider>
-            <div id="reviews-section" className="d-flex justify-content-center text-center fs-1 m-5">Отзывы</div>
+            <div id="reviews-section" className="text-center my-4 px-3">
+                <span className="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 rounded-pill mb-2 fw-semibold">
+                    🎁 Акция: возврат 100 ₽ за отзыв
+                </span>
+                <h2 className="fs-1 fw-bold mb-2">Отзывы наших гостей</h2>
+                <p className="text-muted small mx-auto" style={{ maxWidth: "600px" }}>
+                    Оставьте отзыв после вашего отдыха и получите гарантированный возврат 100 ₽!
+                </p>
+            </div>
             <div className="react-slick-slider"> {/* Обертка для стилизации */}
                 <Slider {...settings}>
                     {items.map((item, index) => (
-                        <div style={{padding: "20px", margin: "20px"}}>
+                        <div key={index} style={{ padding: "10px", margin: "0" }}>
                             <img src={item.img} alt="" width="100%" className="rounded-5"/>
                             <div key={index} className="slide-item bg-white-grey mt-4 rounded-5"  >
                                 {item.text}

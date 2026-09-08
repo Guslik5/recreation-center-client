@@ -6,6 +6,7 @@ import {PhotoCollage} from "../Components/PhotoCollage.jsx";
 import JumbotroneTechnic from "../Components/JumbotroneTechnic.jsx";
 import SliderPhotos from "../Components/SliderPhoto.jsx";
 import {Houses} from "../Components/Houses.jsx";
+import {ServicesPrices} from "../Components/ServicesPrices.jsx";
 import {Bathhouse} from "../Components/Bathhouse.jsx";
 import {Baretsky} from "../Components/Baretsky.jsx";
 import {AccordionQuestions} from "../Components/AccordionQuestion.jsx";
@@ -22,6 +23,7 @@ export const Home = () => {
             <JumbotroneTechnic/>
             <SliderPhotos/>
             <Houses/>
+            <ServicesPrices/>
             <VideoContainer/>
             <Bathhouse/>
             <Baretsky/>
