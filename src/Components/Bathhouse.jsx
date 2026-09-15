@@ -65,7 +65,7 @@ export const Bathhouse = () => {
             <Row className="mb-5 mx-0 g-4 align-items-stretch">
                 {/* Левая колонка: Интерактивная галерея */}
                 <Col lg={7} className="d-flex flex-column">
-                    <div className="position-relative rounded-4 overflow-hidden shadow-sm mb-3" style={{ height: "400px", backgroundColor: "#f0f0f0" }}>
+                    <div className="position-relative rounded-4 overflow-hidden shadow-sm mb-3" style={{ height: "420px", backgroundColor: "#f0f0f0" }}>
                         <img
                             src={images[activeImgIndex].src}
                             alt={images[activeImgIndex].alt}
@@ -85,7 +85,7 @@ export const Bathhouse = () => {
                     </div>
 
                     {/* Миниатюры */}
-                    <Row className="g-2">
+                    <Row className="g-2 mb-3">
                         {images.map((img, idx) => (
                             <Col key={idx} xs={4} sm={2}>
                                 <div
@@ -93,7 +93,7 @@ export const Bathhouse = () => {
                                     role="button"
                                     className={`rounded-3 overflow-hidden shadow-sm border ${activeImgIndex === idx ? "border-success border-3" : "border-transparent"}`}
                                     style={{
-                                        height: "75px",
+                                        height: "80px",
                                         cursor: "pointer",
                                         opacity: activeImgIndex === idx ? 1 : 0.75,
                                         transition: "all 0.2s ease"
@@ -108,6 +108,46 @@ export const Bathhouse = () => {
                                 </div>
                             </Col>
                         ))}
+                    </Row>
+
+                    {/* Карточки особенностей бани и купели */}
+                    <Row className="g-2 flex-grow-1">
+                        <Col sm={6} xs={12}>
+                            <div className="p-3 rounded-4 bg-white border h-100 d-flex align-items-center gap-3 shadow-sm">
+                                <div className="fs-2">🔥</div>
+                                <div>
+                                    <div className="fw-bold text-dark small">На березовых дровах</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Мягкий, живой и целебный пар</div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col sm={6} xs={12}>
+                            <div className="p-3 rounded-4 bg-white border h-100 d-flex align-items-center gap-3 shadow-sm">
+                                <div className="fs-2">🌊</div>
+                                <div>
+                                    <div className="fw-bold text-dark small">Обливное ведро-водопад</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Бодрящий контраст на террасе</div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col sm={6} xs={12}>
+                            <div className="p-3 rounded-4 bg-white border h-100 d-flex align-items-center gap-3 shadow-sm">
+                                <div className="fs-2">🌲</div>
+                                <div>
+                                    <div className="fw-bold text-dark small">Купель под открытым небом</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Горячая релакс-ванна у леса</div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col sm={6} xs={12}>
+                            <div className="p-3 rounded-4 bg-white border h-100 d-flex align-items-center gap-3 shadow-sm">
+                                <div className="fs-2">✨</div>
+                                <div>
+                                    <div className="fw-bold text-dark small">Идеальная чистота</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Свежая подготовленная вода</div>
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
                 </Col>
 
@@ -127,7 +167,7 @@ export const Bathhouse = () => {
                         <div className="p-3 rounded-4 bg-white shadow-sm border mb-3">
                             <div className="d-flex justify-content-between align-items-start mb-1">
                                 <div className="fw-bold text-dark fs-5">
-                                    🪵 Только баня на дровах
+                                    🏡 Только баня на дровах
                                 </div>
                                 <div className="text-end">
                                     <div className="fs-5 fw-bold" style={{ color: "#2e7d32" }}>4 500 ₽</div>
