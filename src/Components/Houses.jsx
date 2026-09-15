@@ -2,8 +2,8 @@ import React from 'react';
 import { CardGroup, Container, Row, Col } from "react-bootstrap";
 import houseWithSaunaImg from "../assets/new_images/photo_2026-09-06_06-40-40.jpg";
 import houseJacuzziImg from "../assets/new_images/photo_2026-09-06_06-38-45.jpg";
-import house3TerraceImg from "../assets/new_images/house3_terrace.jpg";
-import house2TerraceImg from "../assets/new_images/photo_2026-09-06_06-38-44.jpg";
+import house3TerraceImg from "../assets/new_images/photo_2026-09-06_06-38-44.jpg";
+import house2TerraceImg from "../assets/new_images/house3_terrace.jpg";
 import { CardHouse } from "./CardHouse.jsx";
 
 export const Houses = () => {
