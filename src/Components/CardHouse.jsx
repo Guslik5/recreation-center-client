@@ -31,7 +31,7 @@ export const CardHouse = ({ title, capacity, price, description, image }) => {
                         </Badge>
                     )}
                     <Badge bg="secondary" className="px-2 py-1 fw-normal">
-                        Мини-бар включен
+                        Есть мини бар
                     </Badge>
                 </div>
                 {title && <Card.Title className="fs-5 fw-bold mb-2">{title}</Card.Title>}

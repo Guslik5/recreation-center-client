@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge, Button, Table } from 'react-bootstrap';
 import bathhouseImg from '../assets/new_images/photo_2026-09-06_06-38-46.jpg';
+import furakoImg from '../assets/BaptismalFont/photo3.jpg';
 import quadImg from '../assets/new_images/photo_2026-09-06_06-40-42.jpg';
 import pitbikeImg from '../assets/new_images/photo_2026-09-06_06-40-44.jpg';
 import hookahImg from '../assets/new_images/hookah.jpg';
@@ -16,6 +17,14 @@ export const ServicesPrices = () => {
             img: bathhouseImg,
             description: "Баня на 6 человек на дровах. Время парения: 4–5 часов. Шапка и полотенца бесплатно входят в услуги бани.",
             badge: "До 6 человек",
+        },
+        {
+            title: "Баня + Купель Фурако ♨️🪵",
+            price: "10 500 ₽",
+            unit: "сеанс (4–5 часов)",
+            img: furakoImg,
+            description: "Комплекс 4–5 часов: жаркая баня на дровах + теплая уличная купель Фурако на террасе. Отдельно купель не предоставляется.",
+            badge: "Хит релакса",
         },
         {
             title: "Тир: стрельба по мишеням 🎯",
@@ -150,9 +159,12 @@ export const ServicesPrices = () => {
                         </Col>
                         <Col xs={12} md={4}>
                             <div className="p-3 rounded-3 h-100" style={{ background: "rgba(255, 255, 255, 0.12)", backdropFilter: "blur(4px)" }}>
-                                <div className="fs-3 mb-1">♨️</div>
-                                <div className="fw-bold mb-1">Установка чана-купели</div>
-                                <div className="text-white-50 small">Горячий сибирский чан-купель под открытым небом для круглогодичного расслабления.</div>
+                                <div className="d-flex justify-content-between align-items-center mb-1">
+                                    <div className="fs-3">♨️</div>
+                                    <Badge bg="success" className="fw-normal">Готово!</Badge>
+                                </div>
+                                <div className="fw-bold mb-1">Купель Фурако запущена</div>
+                                <div className="text-white-50 small">Горячая уличная купель из натурального дерева на террасе уже установлена и доступна вместе с баней!</div>
                             </div>
                         </Col>
                         <Col xs={12} md={4}>

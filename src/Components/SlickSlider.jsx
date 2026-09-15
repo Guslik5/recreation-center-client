@@ -8,6 +8,8 @@ import reviewsPhoto2 from "../assets/Reviews/reviewsPhoto2.jpg"
 import reviewsPhoto3 from "../assets/Reviews/reviewsPhoto3.jpg"
 import reviewsPhoto4 from "../assets/Reviews/reviewsPhoto4.jpg"
 import reviewsPhoto5 from "../assets/Reviews/reviewsPhoto5.jpg"
+import reviewsPhoto6 from "../assets/Reviews/reviewsPhoto6.jpg"
+import reviewsPhoto7 from "../assets/Reviews/reviewsPhoto7.jpg"
 
 const StyledSlickSlider = styled.div`
     /* Основные стили для слайдера */
@@ -15,6 +17,12 @@ const StyledSlickSlider = styled.div`
         width: 85%;         /* Занимает всю доступную ширину */
         margin: 3em auto;       /* Центрирование слайдера */
         
+    }
+
+    .react-slick-slider img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
     }
 
     /* Стили для отдельных слайдов */
@@ -73,6 +81,14 @@ export function ReactSlickSlider() {
         {
             img: reviewsPhoto5,
             text: <div><h5>Алексей</h5><p style={{fontSize: "0.75em"}}> База отдыха — просто огонь! Домики уютные, территория красивая, а мангальная зона — рай для любителей шашлыка (а я люблю!). А когда узнал, что можно покататься на квадроцикле и питбайке — сразу решил, что это не просто отдых, а настоящее приключение. Советую всем, кто хочет отдохнуть с комфортом и зарядиться адреналином (и немного сжечь калории после шашлыка)!</p></div>,
+        },
+        {
+            img: reviewsPhoto6,
+            text: <div><h5>Яна</h5><p style={{fontSize: "0.75em"}}>Отлично все! Уютный и чистый дом, качественное постельное, все новое. Удачное место, рядом две достопримечательности + брали в прокат квадрики - активно провели время семьей. Хорошая и отзывчивая хозяйка! Спасибо! Приедем еще!</p></div>,
+        },
+        {
+            img: reviewsPhoto7,
+            text: <div><h5>Александра</h5><p style={{fontSize: "0.75em"}}>Снимали домик с 1 июня по 30 августа — всё просто супер! Отличное место для отдыха большой компанией. Дома чисто, уютно, есть всё необходимое. На любые наши пожелания реагируют моментально! Большое спасибо за заботу, вернемся еще не раз!</p></div>,
         },
     ];
 

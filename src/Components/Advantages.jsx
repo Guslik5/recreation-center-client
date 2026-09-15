@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
+import { Card, CardGroup, Col, Container, Row } from "react-bootstrap";
 import image from "../assets/check-mark-icon.png"
-import {CardAdvantages} from "./CardAdvantages.jsx";
+import { CardAdvantages } from "./CardAdvantages.jsx";
 
 export const Advantages = () => {
     const info = [
@@ -19,7 +19,7 @@ export const Advantages = () => {
         },
         {
             title: "Продуманный досуг",
-            description: "Баня, тир, кальян, питбайки, квадроциклы и мангал-олень.",
+            description: "Баня, купель Фурако, тир, кальян, питбайки, квадроциклы и мангал",
             icon: "🎯",
             badge: "Активности",
         },
@@ -42,7 +42,7 @@ export const Advantages = () => {
             badge: "Надежность",
         },
         {
-            title: "Мини-бар в домике",
+            title: "Есть мини бар",
             description: "Напитки и лимонады под рукой в номере, когда магазины закрыты.",
             icon: "🍹",
             badge: "Сервис",
