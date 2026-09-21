@@ -156,7 +156,7 @@ export const Bathhouse = () => {
                     <div>
                         <div className="d-flex flex-wrap gap-2 mb-3">
                             <span className="badge bg-light text-dark border px-2 py-2">👥 До 6 человек</span>
-                            <span className="badge bg-light text-success border px-2 py-2">🧖 Шапки и полотенца бесплатно</span>
+                            <span className="badge bg-light text-success border px-2 py-2">🧖 Банные шапки бесплатно</span>
                         </div>
 
                         <h3 className="fw-bold fs-4 mb-3">
@@ -175,7 +175,7 @@ export const Bathhouse = () => {
                                 </div>
                             </div>
                             <p className="text-muted small mb-0">
-                                Настоящая русская парная на дровах до 6 человек. Чистые банные шапки и полотенца уже входят в стоимость.
+                                Настоящая русская парная на дровах до 6 человек. Чистые банные шапки входят в стоимость. Полотенца не предоставляются (доступна аренда).
                             </p>
                         </div>
 
@@ -221,30 +221,34 @@ export const Bathhouse = () => {
                         {/* Товары для бани */}
                         <div className="p-3 rounded-3 bg-white border">
                             <div className="fw-bold text-dark mb-2 small text-uppercase" style={{ letterSpacing: "0.5px" }}>
-                                🌿 В продаже у администратора:
+                                🌿 Товары и аренда для бани:
                             </div>
                             <div className="row g-1 small text-muted">
                                 <div className="col-6 d-flex justify-content-between pe-2">
+                                    <span>Аренда полотенца:</span>
+                                    <strong className="text-dark">300 ₽</strong>
+                                </div>
+                                <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Дубовый веник:</span>
                                     <strong className="text-dark">800 ₽</strong>
                                 </div>
-                                <div className="col-6 d-flex justify-content-between ps-2">
+                                <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Березовый веник:</span>
                                     <strong className="text-dark">700 ₽</strong>
                                 </div>
-                                <div className="col-6 d-flex justify-content-between pe-2">
+                                <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Арома-масла:</span>
                                     <strong className="text-dark">350 ₽</strong>
                                 </div>
-                                <div className="col-6 d-flex justify-content-between ps-2">
+                                <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Дрова 7 шт.:</span>
                                     <strong className="text-dark">300 ₽</strong>
                                 </div>
-                                <div className="col-6 d-flex justify-content-between pe-2">
+                                <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Древесный уголь:</span>
                                     <strong className="text-dark">350 ₽</strong>
                                 </div>
-                                <div className="col-6 d-flex justify-content-between ps-2">
+                                <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Розжиг:</span>
                                     <strong className="text-dark">300 ₽</strong>
                                 </div>

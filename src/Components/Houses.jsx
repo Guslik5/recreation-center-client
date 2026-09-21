@@ -6,6 +6,10 @@ import house3TerraceImg from "../assets/new_images/photo_2026-09-06_06-38-44.jpg
 import house2TerraceImg from "../assets/new_images/house3_terrace.jpg";
 import { CardHouse } from "./CardHouse.jsx";
 
+// Ссылка на Яндекс Диск с фотографиями домов
+// Замените URL на вашу актуальную ссылку на папку Яндекс Диска при необходимости
+const YANDEX_DISK_HOUSES_URL = "https://disk.yandex.ru/";
+
 export const Houses = () => {
     const info = [
         {
@@ -45,13 +49,26 @@ export const Houses = () => {
                 <p className="text-muted mx-auto mb-3" style={{ maxWidth: "720px" }}>
                     Цены указаны за сутки проживания. В каждом доме есть мини-бар, вся необходимая посуда и гигиенические принадлежности.
                 </p>
-                <div className="d-flex justify-content-center gap-2 flex-wrap mb-2">
+                <div className="d-flex justify-content-center gap-2 flex-wrap mb-3">
                     <span className="badge bg-success py-2 px-3 fw-normal fs-6">
                         👶 Детские кроватки и стульчики — бесплатно
                     </span>
                     <span className="badge bg-light text-dark border py-2 px-3 fw-normal fs-6">
                         👥 Доплата за доп. гостя — 1 000 ₽ / сутки
                     </span>
+                </div>
+                <div>
+                    <a
+                        href={YANDEX_DISK_HOUSES_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-success rounded-pill px-3 py-1 shadow-sm d-inline-flex align-items-center gap-2 small"
+                        style={{ fontSize: "0.9rem" }}
+                    >
+                        <span>📁</span>
+                        <span>Больше фото домов тут (Яндекс Диск)</span>
+                        <span>↗</span>
+                    </a>
                 </div>
             </div>
             <Container fluid className="px-lg-5 pb-5 border-bottom">
@@ -68,6 +85,35 @@ export const Houses = () => {
                         </Col>
                     ))}
                 </Row>
+
+                {/* Баннер со ссылкой на Яндекс Диск для подробного просмотра всех фото */}
+                <div className="text-center mt-5">
+                    <div
+                        className="p-4 rounded-4 bg-white shadow-sm border d-inline-block text-start"
+                        style={{ maxWidth: "680px", width: "100%" }}
+                    >
+                        <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+                            <div className="d-flex align-items-center gap-3">
+                                <div className="fs-1">📸</div>
+                                <div>
+                                    <div className="fw-bold fs-5 text-dark">Хотите больше фото домиков?</div>
+                                    <div className="text-muted small">
+                                        Посмотрите подробные альбомы всех комнат, интерьеров, террас и территории
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href={YANDEX_DISK_HOUSES_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-success custom-button-green text-white px-4 py-2 rounded-pill fw-semibold text-nowrap shadow-sm d-inline-flex align-items-center gap-2"
+                            >
+                                <span>Больше фото домов тут</span>
+                                <span style={{ fontSize: "1.1rem" }}>↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </Container>
         </div>
     );
