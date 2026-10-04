@@ -27,7 +27,7 @@ export const Home = ({ onOpenBooking, onOpenReviewModal }) => {
             <VideoContainer />
             <Bathhouse onOpenBooking={onOpenBooking} />
             <Baretsky />
-            <AccordionQuestions />
+            <AccordionQuestions onOpenBooking={onOpenBooking} />
             <ReactSlickSlider onOpenReviewModal={onOpenReviewModal} />
             <Location />
         </>
