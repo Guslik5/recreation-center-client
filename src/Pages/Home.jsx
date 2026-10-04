@@ -12,7 +12,6 @@ import {Baretsky} from "../Components/Baretsky.jsx";
 import {AccordionQuestions} from "../Components/AccordionQuestion.jsx";
 import {ReactSlickSlider} from "../Components/SlickSlider.jsx";
 import {Location} from "../Components/Location.jsx";
-import {VideoContainer} from "../Components/VideoContainer.jsx";
 
 export const Home = ({ onOpenBooking, onOpenReviewModal }) => {
     return (
@@ -24,7 +23,6 @@ export const Home = ({ onOpenBooking, onOpenReviewModal }) => {
             <SliderPhotos />
             <Houses onOpenBooking={onOpenBooking} />
             <ServicesPrices onOpenBooking={onOpenBooking} />
-            <VideoContainer />
             <Bathhouse onOpenBooking={onOpenBooking} />
             <Baretsky />
             <AccordionQuestions onOpenBooking={onOpenBooking} />

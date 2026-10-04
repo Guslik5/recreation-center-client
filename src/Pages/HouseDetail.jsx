@@ -27,7 +27,9 @@ import {
   Heart,
   Sun,
   X,
-  AlertCircle
+  AlertCircle,
+  Video,
+  Play
 } from "lucide-react";
 
 // Карта иконок удобств
@@ -327,6 +329,51 @@ export const HouseDetail = ({ onOpenBooking }) => {
                 ))}
               </div>
             </Card>
+
+            {/* Видеоэкскурсия по домику */}
+            {house.video && (
+              <Card className="border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white mb-4">
+                <div className="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
+                  <div>
+                    <div className="d-inline-flex align-items-center gap-2 badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-semibold mb-2">
+                      <Video size={16} />
+                      <span>Видеоэкскурсия</span>
+                    </div>
+                    <h2 className="fs-4 fw-bold text-dark mb-1">
+                      Видеообзор: {house.title}
+                    </h2>
+                    <p className="text-muted small mb-0">
+                      Посмотрите живую видеосъемку комнат, интерьера и прилегающей территории
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  className="rounded-4 overflow-hidden shadow-sm bg-black"
+                  style={{
+                    maxHeight: "520px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <video
+                    controls
+                    preload="metadata"
+                    poster={house.images[0]?.src}
+                    className="w-100"
+                    style={{
+                      maxHeight: "520px",
+                      objectFit: "contain",
+                      backgroundColor: "#000",
+                    }}
+                  >
+                    <source src={house.video} />
+                    Ваш браузер не поддерживает встроенное видео.
+                  </video>
+                </div>
+              </Card>
+            )}
 
             {/* Сетка удобств и комплектации */}
             <Card className="border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white mb-4">

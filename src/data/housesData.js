@@ -27,12 +27,19 @@ import houseRomantic3 from "../assets/new_images/photo_2026-09-06_06-40-48.jpg";
 import houseRomantic4 from "../assets/new_images/photo_2026-09-06_06-40-23.jpg";
 import houseRomanticAlt from "../assets/Houses/house4.jpg";
 
+// Импорт видеообзоров домов
+import house1Video from "../assets/videos/house1.MOV";
+import house2Video from "../assets/videos/house2.MOV";
+import house3Video from "../assets/videos/house3.mp4";
+import house4Video from "../assets/videos/house4.MOV";
+
 export const YANDEX_DISK_HOUSES_URL = "https://disk.yandex.ru/";
 
 export const housesData = [
   {
     id: 1,
     slug: "cottage-with-sauna",
+    video: house1Video,
     title: "Коттедж с сауной",
     fullTitle: "Двухэтажный коттедж с собственной сауной на дровах",
     badge: "Премиум релакс",
@@ -89,6 +96,7 @@ export const housesData = [
   {
     id: 2,
     slug: "a-frame-with-jacuzzi",
+    video: house2Video,
     title: "А-фрейм с джакузи",
     fullTitle: "Стильный треугольный А-фрейм с горячим гидромассажным джакузи",
     badge: "Хит для фотосессий",
@@ -144,6 +152,7 @@ export const housesData = [
   {
     id: 3,
     slug: "family-house-with-terrace",
+    video: house3Video,
     title: "Семейный дом с террасой",
     fullTitle: "Просторный семейный дом с большой террасой и подвесной качелью",
     badge: "Для дружной семьи",
@@ -199,6 +208,7 @@ export const housesData = [
   {
     id: 4,
     slug: "romantic-house-for-two",
+    video: house4Video,
     title: "Дом для двоих с качелями",
     fullTitle: "Романтический уединенный домик для двоих с качелями на террасе",
     badge: "Романтик & Релакс",
