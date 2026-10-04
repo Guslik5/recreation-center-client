@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Badge } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import image1 from "../assets/Baretsky/photo1.jpg";
 import image2 from "../assets/Baretsky/photo2.jpg";
 import { Sparkles, Flame, Heart, Quote, Send, ArrowRight } from "lucide-react";
@@ -11,13 +11,13 @@ export const Baretsky = () => {
                 {/* Заголовок секции */}
                 <div className="text-center mb-5">
                     <span className="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 rounded-pill mb-2 fw-semibold fs-6">
-                        👑 Основатель и вдохновитель проекта
+                        🌟 Звёздный гость и друг базы отдыха
                     </span>
                     <h2 className="fs-1 fw-bold text-dark mb-2">
-                        Кто стоит за базой отдыха «БАРецкий»?
+                        Стас Барецкий на базе отдыха «БАРецкий»
                     </h2>
-                    <p className="text-muted mx-auto mb-0" style={{ maxWidth: "680px", fontSize: "0.98rem" }}>
-                        Стас Барецкий — яркая медийная личность, музыкант, шоумен и создатель самобытного загородного пространства в сосновом бору.
+                    <p className="text-muted mx-auto mb-0" style={{ maxWidth: "720px", fontSize: "0.98rem" }}>
+                        Легендарный шоумен и музыкант Стас Барецкий регулярно выбирает наши домики для перезагрузки, душевно отдыхает и активно помогает проекту развиваться!
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@ export const Baretsky = () => {
                         >
                             <img
                                 src={image1}
-                                alt="Стас Барецкий в джакузи"
+                                alt="Стас Барецкий в джакузи на базе отдыха"
                                 className="position-absolute top-0 start-0 w-100 h-100 card-house-img"
                                 style={{ objectFit: "cover" }}
                             />
@@ -46,18 +46,15 @@ export const Baretsky = () => {
                                 }}
                             />
                             <div className="position-relative z-1 text-white">
-                                <Badge bg="success" className="px-2 py-1 mb-1 fw-normal">
-                                    🛁 Фирменный релакс
-                                </Badge>
                                 <div className="fw-bold fs-6">Отдых без компромиссов</div>
                                 <div className="text-white-50 small" style={{ fontSize: "0.78rem" }}>
-                                    Джакузи, парная и полный комфорт
+                                    Джакузи, парная и чистый сосновый бор
                                 </div>
                             </div>
                         </div>
                     </Col>
 
-                    {/* Центральный блок: Цитата, философия и факты */}
+                    {/* Центральный блок: Цитата, вклад в развитие и факты */}
                     <Col lg={6} md={12} className="d-flex">
                         <div className="p-4 p-xl-5 bg-white rounded-4 shadow-sm border w-100 d-flex flex-column justify-content-between">
                             <div>
@@ -65,15 +62,15 @@ export const Baretsky = () => {
                                 <div className="p-3 p-md-4 rounded-3 mb-4 position-relative" style={{ backgroundColor: "#F0FDF4", border: "1px solid #DCFCE7" }}>
                                     <Quote size={28} className="text-success opacity-50 position-absolute top-0 end-0 m-3" />
                                     <p className="text-dark fst-italic mb-2" style={{ lineHeight: "1.7", fontSize: "0.98rem" }}>
-                                        «Я создал базу отдыха «БАРецкий» как место силы и душевной свободы. Здесь нет занудства и городских рамок — только чистый хвойный воздух, жаркая русская баня на дровах, горячая купель и теплый приём с настоящим русским размахом!»
+                                        «Я регулярно приезжаю сюда перезагрузиться душой и телом! Здесь потрясающая энергетика, звенящая тишина леса, жаркая русская баня на дровах и горячая купель. С удовольствием поддерживаю это место и помогаю ему расти — здесь всё сделано качественно, с душой и настоящим размахом!»
                                     </p>
                                     <div className="d-flex align-items-center gap-2">
                                         <div className="fw-bold text-success fs-6">— Стас Барецкий</div>
-                                        <span className="text-muted small">• шоумен и создатель проекта</span>
+                                        <span className="text-muted small">• шоумен, постоянный гость и друг базы</span>
                                     </div>
                                 </div>
 
-                                {/* Преимущества подхода */}
+                                {/* Преимущества и участие в развитии */}
                                 <div className="d-flex flex-column gap-3 mb-4">
                                     <div className="d-flex align-items-start gap-3">
                                         <div className="p-2 rounded-3 bg-light text-success flex-shrink-0 mt-1">
@@ -82,7 +79,7 @@ export const Baretsky = () => {
                                         <div>
                                             <div className="fw-bold text-dark small">Яркий колорит и атмосфера</div>
                                             <div className="text-muted" style={{ fontSize: "0.82rem", lineHeight: "1.4" }}>
-                                                Опыт Стаса в сфере развлечений и шоу-бизнеса помогает создавать для гостей незабываемые впечатления и праздничное настроение.
+                                                Стас активно поддерживает базу отдыха, заряжает её своей неповторимой энергетикой и помогает организовывать яркие события.
                                             </div>
                                         </div>
                                     </div>
@@ -92,9 +89,9 @@ export const Baretsky = () => {
                                             <Flame size={18} />
                                         </div>
                                         <div>
-                                            <div className="fw-bold text-dark small">Настоящий русский отдых</div>
+                                            <div className="fw-bold text-dark small">Любимое место для отдыха</div>
                                             <div className="text-muted" style={{ fontSize: "0.82rem", lineHeight: "1.4" }}>
-                                                Уютные дома из дерева, жаркая парная, горячий банный чан под звездами и мангалы у каждого коттеджа.
+                                                Уютные коттеджи, парная на березовых дровах, банный чан Фурако под открытым небом и персональные зоны барбекю.
                                             </div>
                                         </div>
                                     </div>
@@ -104,9 +101,9 @@ export const Baretsky = () => {
                                             <Heart size={18} />
                                         </div>
                                         <div>
-                                            <div className="fw-bold text-dark small">Душевное гостеприимство</div>
+                                            <div className="fw-bold text-dark small">Постоянное развитие проекта</div>
                                             <div className="text-muted" style={{ fontSize: "0.82rem", lineHeight: "1.4" }}>
-                                                Забота о каждой детали: чистое белье, бесплатные детские кроватки, тишина соснового леса и внимание к каждому гостю.
+                                                Мы непрерывно улучшаем сервис, благоустраиваем территорию и готовим интересные сюрпризы для каждого гостя!
                                             </div>
                                         </div>
                                     </div>
@@ -160,12 +157,9 @@ export const Baretsky = () => {
                                 }}
                             />
                             <div className="position-relative z-1 text-white">
-                                <Badge bg="success" className="px-2 py-1 mb-1 fw-normal">
-                                    👍 Знак качества
-                                </Badge>
                                 <div className="fw-bold fs-6">Добро пожаловать в «БАРецкий»!</div>
                                 <div className="text-white-50 small" style={{ fontSize: "0.78rem" }}>
-                                    Отдых, который запомнится навсегда
+                                    Место, где отдыхают душой и телом
                                 </div>
                             </div>
                         </div>
