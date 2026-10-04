@@ -3,42 +3,18 @@ import bannerImg from '../assets/banner.jpg';
 import { Button, Card, Form } from "react-bootstrap";
 import "../Css/main.css";
 
-export const Banner = () => {
+export const Banner = ({ onOpenBooking }) => {
     const [formNumber, setFormNumber] = useState("");
 
-    const onSubmit = async (event) => {
+    const onSubmit = (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-        console.log(json);
-
-        try {
-            const res = await fetch("https://smartforms.dev/submit/685415abc184545ccc0bba83", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: json
-            });
-
-            const data = await res.json();
-
-            if (res.ok) {
-                console.log("Success", data);
-                alert("Форма успешно отправлена!");
-                setFormNumber("");
-            } else {
-                console.error("Ошибка при отправке", data);
-                alert("Ошибка при отправке формы: " + res.statusText);  // Добавил statusText
-            }
-
-        } catch (error) {
-            console.error("Ошибка сети", error);
-            alert("Ошибка сети: " + error.message);
+        if (onOpenBooking) {
+            onOpenBooking();
+        } else {
+            window.location.href = "tel:+79119688269";
         }
     };
+
     return (
         <Card className="bg-dark text-white rounded-0 border-0 position-relative overflow-hidden">
             <Card.Img
@@ -49,33 +25,37 @@ export const Banner = () => {
                     height: "50vh",
                     maxHeight: "580px",
                     objectFit: "cover",
-                    filter: "brightness(0.75)"
+                    filter: "brightness(0.72)"
                 }}
             />
             <Card.ImgOverlay className="d-flex align-items-center flex-column justify-content-center text-center p-3 p-md-5">
-                {/* Title block - always visible, perfectly centered on mobile */}
+                {/* Title block - always visible */}
                 <div className="my-auto my-md-0">
                     <Card.Text
                         className="mb-1 text-uppercase text-white-50 small fw-semibold"
                         style={{ letterSpacing: "1.2px", fontSize: "0.85rem" }}
                     >
-                        Бани и техника для развлечений
+                        Уютные домики • Баня на дровах • Чан Фурако
                     </Card.Text>
                     <Card.Title className="display-5 display-md-4 fw-bold mb-2">
                         База отдыха БАРецкий
                     </Card.Title>
-                    <p className="d-md-none text-white-50 small mb-3 mx-auto" style={{ maxWidth: "290px" }}>
-                        Уютные домики, баня на дровах и активный отдых на природе
+                    <p className="d-md-none text-white-50 small mb-3 mx-auto" style={{ maxWidth: "320px" }}>
+                        Уютные дома в лесу, русская парная и горячая купель под открытым небом
                     </p>
                     <button
                         type="button"
                         className="btn btn-success custom-button-green rounded-pill px-4 py-2 d-md-none fw-semibold shadow"
                         onClick={() => {
-                            document.getElementById('houses-section')?.scrollIntoView({ behavior: 'smooth' });
+                            if (onOpenBooking) {
+                                onOpenBooking();
+                            } else {
+                                document.getElementById('houses-section')?.scrollIntoView({ behavior: 'smooth' });
+                            }
                         }}
                         style={{ fontSize: "0.88rem" }}
                     >
-                        Выбрать домик
+                        Забронировать отдых
                     </button>
                 </div>
 
@@ -85,33 +65,28 @@ export const Banner = () => {
                         className="w-75 fs-5 custom-text-centre mb-4 text-white"
                         style={{ textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
                     >
-                        Наша база отдыха предлагает 4 уютных домика для отдыха, баню для релаксации,
-                        детскую площадку с батутом, аренду квадроциклов и мототехники для активного времяпровождения.
+                        Наша база отдыха предлагает 4 комфортных домика, настоящую русскую баню на дровах,
+                        горячую купель Фурако на террасе, персональные мангальные зоны и чистый сосновый воздух для идеального релакса.
                     </Card.Text>
-                    <Form
-                        action="https://smartforms.dev/submit/685415abc184545ccc0bba83"
-                        method="POST"
-                        onSubmit={onSubmit}
-                        className="d-flex align-items-center bg-white rounded-3 w-100 mb-4 p-1 shadow-lg"
-                        style={{ maxWidth: "560px" }}
+                    <div
+                        className="d-flex align-items-center justify-content-center gap-3 w-100 mb-3"
                     >
-                        <Form.Label className="text-black m-0 mx-2 d-none d-lg-block">Телефон:</Form.Label>
-                        <Form.Group className="flex-grow-1 mb-0" controlId="formPhone">
-                            <Form.Control
-                                className="custom-change-fs border-0"
-                                type="tel"
-                                placeholder="Введите номер телефона"
-                                name="tel"
-                                value={formNumber}
-                                onChange={(e) => setFormNumber(e.target.value)}
-                                required
-                            />
-                        </Form.Group>
-
-                        <Button type="submit" className="custom-button-green rounded-3 ms-2 custom-change-width">
-                            Забронировать
-                        </Button>
-                    </Form>
+                        <button
+                            type="button"
+                            onClick={() => onOpenBooking && onOpenBooking()}
+                            className="btn btn-success custom-button-green rounded-pill px-5 py-3 fw-bold fs-6 text-white shadow-lg"
+                        >
+                            📅 Забронировать отдых
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => document.getElementById('houses-section')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="btn btn-outline-light rounded-pill px-4 py-3 fw-semibold fs-6"
+                            style={{ backgroundColor: "rgba(255,255,255,0.15)", backdropFilter: "blur(5px)" }}
+                        >
+                            Выбрать домик →
+                        </button>
+                    </div>
                 </div>
             </Card.ImgOverlay>
         </Card>

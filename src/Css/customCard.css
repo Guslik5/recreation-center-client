@@ -8,3 +8,20 @@
         width: 20%;
     }
 }
+
+.card-house-img {
+    transition: transform 0.4s ease;
+}
+
+.card-house-img:hover {
+    transform: scale(1.04);
+}
+
+.hover-underline {
+    transition: color 0.2s ease;
+}
+
+.hover-underline:hover {
+    color: #198754 !important;
+    text-decoration: underline !important;
+}

@@ -8,7 +8,7 @@ import hookahImg from '../assets/new_images/hookah.jpg';
 import shootingImg from '../assets/new_images/shooting_range.jpg';
 import saunaSuppliesImg from '../assets/new_images/sauna_supplies.jpg';
 
-export const ServicesPrices = () => {
+export const ServicesPrices = ({ onOpenBooking }) => {
     const services = [
         {
             title: "Баня на дровах 🪵",
@@ -286,9 +286,16 @@ export const ServicesPrices = () => {
                             В стоимость каждого дома входит: мангал, постельное белье, полотенца, оборудованная кухня, Wi-Fi и парковка.
                             Детские стульчики и кроватки предоставляются бесплатно по запросу.
                         </div>
-                        <div className="d-flex gap-2">
-                            <a href="tel:+79119688269" className="btn btn-success custom-button-green px-4 py-2 rounded-3 text-nowrap">
-                                Позвонить для брони
+                        <div className="d-flex flex-wrap gap-2 justify-content-center">
+                            <Button
+                                variant="success"
+                                className="custom-button-green px-4 py-2 rounded-3 text-nowrap fw-semibold text-white"
+                                onClick={() => onOpenBooking ? onOpenBooking() : window.location.href = "tel:+79119688269"}
+                            >
+                                Забронировать дом
+                            </Button>
+                            <a href="tel:+79119688269" className="btn btn-outline-success px-3 py-2 rounded-3 text-nowrap fw-semibold">
+                                8 911 968 82 69
                             </a>
                         </div>
                     </div>

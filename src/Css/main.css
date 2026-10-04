@@ -7,17 +7,18 @@
 }
 
 .custom-button-green {
-    background-color: #23F323 !important;
-    border-color: #23f32300 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    /* Убираем стандартную тень */
-    transition: box-shadow 0.3s ease;
-    /* Добавляем плавную анимацию */
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(25, 135, 84, 0.25);
+    transition: all 0.25s ease;
 }
 
 .custom-button-green:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-    /* Добавляем тень при наведении */
+    background-color: #157347 !important;
+    border-color: #146c43 !important;
+    box-shadow: 0 4px 16px rgba(25, 135, 84, 0.4) !important;
+    transform: translateY(-1px);
 }
 
 .custom-m-1 {

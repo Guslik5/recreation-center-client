@@ -14,22 +14,22 @@ import {ReactSlickSlider} from "../Components/SlickSlider.jsx";
 import {Location} from "../Components/Location.jsx";
 import {VideoContainer} from "../Components/VideoContainer.jsx";
 
-export const Home = () => {
+export const Home = ({ onOpenBooking, onOpenReviewModal }) => {
     return (
         <>
-            <Banner/>
-            <Advantages/>
-            <PhotoCollage/>
-            <JumbotroneTechnic/>
-            <SliderPhotos/>
-            <Houses/>
-            <ServicesPrices/>
-            <VideoContainer/>
-            <Bathhouse/>
-            <Baretsky/>
-            <AccordionQuestions/>
-            <ReactSlickSlider/>
-            <Location/>
+            <Banner onOpenBooking={onOpenBooking} />
+            <Advantages />
+            <PhotoCollage />
+            <JumbotroneTechnic />
+            <SliderPhotos />
+            <Houses onOpenBooking={onOpenBooking} />
+            <ServicesPrices onOpenBooking={onOpenBooking} />
+            <VideoContainer />
+            <Bathhouse onOpenBooking={onOpenBooking} />
+            <Baretsky />
+            <AccordionQuestions />
+            <ReactSlickSlider onOpenReviewModal={onOpenReviewModal} />
+            <Location />
         </>
-    )
-}
+    );
+};

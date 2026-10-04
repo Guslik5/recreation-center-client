@@ -1,33 +1,33 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import phoneIcon from '../assets/phone-icon.png';
 import mapIcon from '../assets/map-icon.png';
 import logoImg from '../assets/new_logo.png';
 import "../Css/header.css";
 
-export default function Header() {
+export default function Header({ onOpenBooking }) {
     const [expanded, setExpanded] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleNavClick = (id) => {
         setExpanded(false);
-        if (id) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+        if (location.pathname !== '/') {
+            if (id) {
+                navigate(`/#${id}`);
+            } else {
+                navigate('/');
             }
         } else {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    };
-
-    const handleBookingClick = () => {
-        setExpanded(false);
-        const bannerElement = document.getElementById('formPhone');
-        if (bannerElement) {
-            bannerElement.scrollIntoView({ behavior: 'smooth' });
-            bannerElement.focus();
-        } else {
-            window.location.href = "tel:+79119688269";
+            if (id) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
     };
 
@@ -106,7 +106,7 @@ export default function Header() {
                             className="header-nav-btn"
                             onClick={() => handleNavClick('bathhouse-section')}
                         >
-                            Баня
+                            Баня и чан
                         </button>
                         <button
                             type="button"
@@ -153,13 +153,20 @@ export default function Header() {
                         </div>
 
                         {/* Booking CTA Button */}
-                        <a
-                            href="tel:+79119688269"
-                            className="header-cta-btn w-100 w-lg-auto text-center text-decoration-none"
-                            onClick={() => setExpanded(false)}
+                        <button
+                            type="button"
+                            className="header-cta-btn w-100 w-lg-auto text-center border-0"
+                            onClick={() => {
+                                setExpanded(false);
+                                if (onOpenBooking) {
+                                    onOpenBooking();
+                                } else {
+                                    window.location.href = "tel:+79119688269";
+                                }
+                            }}
                         >
                             Забронировать
-                        </a>
+                        </button>
                     </div>
                 </Navbar.Collapse>
             </Container>

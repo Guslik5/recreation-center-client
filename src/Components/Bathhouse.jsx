@@ -1,48 +1,48 @@
 import React, { useState } from 'react';
-import { Col, Container, Row, Badge } from "react-bootstrap";
+import { Col, Container, Row, Badge, Button } from "react-bootstrap";
 import photoPanorama from "../assets/new_images/photo_2026-09-06_06-38-50.jpg";
 import photoFacade from "../assets/new_images/photo_2026-09-06_06-38-46.jpg";
-import photoGnome from "../assets/new_images/photo_2026-09-06_06-38-49.jpg";
 import photoInterior from "../assets/Bathhouse/photo4.jpg";
 import furakoPhoto1 from "../assets/BaptismalFont/photo1.jpg";
 import furakoPhoto2 from "../assets/BaptismalFont/photo2.jpg";
 import furakoPhoto3 from "../assets/BaptismalFont/photo3.jpg";
+import { YANDEX_DISK_HOUSES_URL } from "../data/housesData";
 
-export const Bathhouse = () => {
+export const Bathhouse = ({ onOpenBooking }) => {
     const images = [
         {
             src: furakoPhoto3,
-            alt: 'Купель Фурако на террасе бани',
+            alt: 'Горячая купель Фурако на деревянной террасе бани',
             label: 'Купель Фурако на террасе',
             tag: 'Хит'
         },
         {
             src: furakoPhoto2,
-            alt: 'Купель Фурако внутри с подогревом',
-            label: 'Внутри деревянной купели',
+            alt: 'Купель Фурако внутри с древесным подогревом',
+            label: 'Деревянный банный чан',
             tag: 'Релакс'
         },
         {
             src: photoPanorama,
-            alt: 'Панорама бани на дровах',
-            label: 'Панорама бани',
+            alt: 'Панорама бани на дровах в сосновом бору',
+            label: 'Панорама бани на опушке',
             tag: 'Баня'
         },
         {
             src: furakoPhoto1,
             alt: 'Купель Фурако под открытым небом',
-            label: 'Купель под открытым небом',
-            tag: 'Фурако'
+            label: 'Горячий чан на дровах',
+            tag: 'Горячий чан'
         },
         {
             src: photoInterior,
-            alt: 'Интерьер парной на дровах',
-            label: 'Интерьер парной',
+            alt: 'Интерьер парной на березовых дровах',
+            label: 'Парная на березовых дровах',
             tag: 'Парная'
         },
         {
             src: photoFacade,
-            alt: 'Фасад бани с вывеской',
+            alt: 'Фасад бани с террасой',
             label: 'Фасад бани',
             tag: 'Баня'
         },
@@ -53,13 +53,31 @@ export const Bathhouse = () => {
     return (
         <Container id="bathhouse-section" className="border-bottom px-3 px-md-4 py-3">
             <div className="text-center my-4">
-                <span className="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 rounded-pill mb-2 fw-semibold">
-                    ♨️ Оздоровление и релакс на природе
-                </span>
+                <div className="d-flex justify-content-center gap-2 flex-wrap mb-2">
+                    <span className="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 rounded-pill fw-semibold">
+                        ♨️ Оздоровление и релакс на природе
+                    </span>
+                    <span className="badge bg-warning bg-opacity-10 text-warning-emphasis border border-warning border-opacity-25 px-3 py-2 rounded-pill fw-semibold">
+                        🪵 Горячий чан на дровах
+                    </span>
+                </div>
                 <h2 className="fs-1 fw-bold mb-2">Баня на дровах и купель Фурако</h2>
                 <p className="text-muted small mx-auto" style={{ maxWidth: "680px" }}>
-                    Жаркая русская парная с мягким паром и горячая уличная купель из натурального дерева под открытым небом на собственной террасе.
+                    Жаркая русская парная с мягким березовым паром и горячая уличная купель Фурако из натурального дерева под открытым небом прямо на террасе у леса.
                 </p>
+                <div>
+                    <a
+                        href={YANDEX_DISK_HOUSES_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-success rounded-pill px-3 py-1 shadow-sm d-inline-flex align-items-center gap-2 small mt-1"
+                        style={{ fontSize: "0.88rem" }}
+                    >
+                        <span>📁</span>
+                        <span>Фото бани и чана на Яндекс Диске</span>
+                        <span>↗</span>
+                    </a>
+                </div>
             </div>
 
             <Row className="mb-5 mx-0 g-4 align-items-stretch">
@@ -132,10 +150,10 @@ export const Bathhouse = () => {
                         </Col>
                         <Col sm={6} xs={12}>
                             <div className="p-3 rounded-4 bg-white border h-100 d-flex align-items-center gap-3 shadow-sm">
-                                <div className="fs-2">🌲</div>
+                                <div className="fs-2">🪵</div>
                                 <div>
-                                    <div className="fw-bold text-dark small">Купель под открытым небом</div>
-                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Горячая релакс-ванна у леса</div>
+                                    <div className="fw-bold text-dark small">Горячий чан Фурако</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Купель под открытым небом у леса</div>
                                 </div>
                             </div>
                         </Col>
@@ -144,7 +162,7 @@ export const Bathhouse = () => {
                                 <div className="fs-2">✨</div>
                                 <div>
                                     <div className="fw-bold text-dark small">Идеальная чистота</div>
-                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Свежая подготовленная вода</div>
+                                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>Свежая подготовленная родниковая вода</div>
                                 </div>
                             </div>
                         </Col>
@@ -211,12 +229,21 @@ export const Bathhouse = () => {
 
                     <div>
                         {/* Кнопка заказа */}
-                        <a
-                            href="tel:+79119688269"
-                            className="btn btn-success custom-button-green w-100 py-2 rounded-3 text-white text-decoration-none fw-semibold mb-3"
-                        >
-                            Забронировать баню / фурако
-                        </a>
+                        <div className="d-flex flex-column gap-2 mb-3">
+                            <Button
+                                variant="success"
+                                className="custom-button-green w-100 py-2 rounded-3 text-white fw-semibold"
+                                onClick={() => {
+                                    if (onOpenBooking) {
+                                        onOpenBooking(null, "Баня + Купель Фурако (10 500 ₽)");
+                                    } else {
+                                        window.location.href = "tel:+79119688269";
+                                    }
+                                }}
+                            >
+                                Забронировать баню / фурако
+                            </Button>
+                        </div>
 
                         {/* Товары для бани */}
                         <div className="p-3 rounded-3 bg-white border">
