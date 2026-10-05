@@ -33,8 +33,6 @@ import house2Video from "../assets/videos/house2.MOV";
 import house3Video from "../assets/videos/house3.mp4";
 import house4Video from "../assets/videos/house4.MOV";
 
-export const YANDEX_DISK_HOUSES_URL = "https://disk.yandex.ru/";
-
 export const housesData = [
   {
     id: 1,
@@ -91,7 +89,6 @@ export const housesData = [
       smoking: "Курение в доме строго запрещено (оборудовано место на открытой террасе)",
       quietHours: "Режим тишины на территории базы с 22:00 до 09:00",
     },
-    yandexDiskUrl: "https://disk.yandex.ru/",
   },
   {
     id: 2,
@@ -147,7 +144,6 @@ export const housesData = [
       smoking: "Курение в доме запрещено (разрешено на открытой террасе)",
       quietHours: "Режим тишины с 22:00 до 09:00",
     },
-    yandexDiskUrl: "https://disk.yandex.ru/",
   },
   {
     id: 3,
@@ -203,7 +199,6 @@ export const housesData = [
       smoking: "Курение в доме запрещено (разрешено на террасе)",
       quietHours: "Режим тишины с 22:00 до 09:00",
     },
-    yandexDiskUrl: "https://disk.yandex.ru/",
   },
   {
     id: 4,
@@ -259,7 +254,6 @@ export const housesData = [
       smoking: "Курение в доме строго запрещено (только на террасе)",
       quietHours: "Режим тишины с 22:00 до 09:00",
     },
-    yandexDiskUrl: "https://disk.yandex.ru/",
   },
 ];
 

@@ -6,7 +6,6 @@ import photoInterior from "../assets/Bathhouse/photo4.jpg";
 import furakoPhoto1 from "../assets/BaptismalFont/photo1.jpg";
 import furakoPhoto2 from "../assets/BaptismalFont/photo2.jpg";
 import furakoPhoto3 from "../assets/BaptismalFont/photo3.jpg";
-import { YANDEX_DISK_HOUSES_URL } from "../data/housesData";
 
 export const Bathhouse = ({ onOpenBooking }) => {
     const images = [
@@ -62,22 +61,9 @@ export const Bathhouse = ({ onOpenBooking }) => {
                     </span>
                 </div>
                 <h2 className="fs-1 fw-bold mb-2">Баня на дровах и купель Фурако</h2>
-                <p className="text-muted small mx-auto" style={{ maxWidth: "680px" }}>
+                <p className="text-muted small mx-auto mb-0" style={{ maxWidth: "680px" }}>
                     Жаркая русская парная с мягким березовым паром и горячая уличная купель Фурако из натурального дерева под открытым небом прямо на террасе у леса.
                 </p>
-                <div>
-                    <a
-                        href={YANDEX_DISK_HOUSES_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-outline-success rounded-pill px-3 py-1 shadow-sm d-inline-flex align-items-center gap-2 small mt-1"
-                        style={{ fontSize: "0.88rem" }}
-                    >
-                        <span>📁</span>
-                        <span>Фото бани и чана на Яндекс Диске</span>
-                        <span>↗</span>
-                    </a>
-                </div>
             </div>
 
             <Row className="mb-5 mx-0 g-4 align-items-stretch">

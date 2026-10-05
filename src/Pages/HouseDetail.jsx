@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Badge, Button, Card, Breadcrumb, Modal } from "react-bootstrap";
-import { getHouseBySlug, housesData, YANDEX_DISK_HOUSES_URL } from "../data/housesData";
+import { getHouseBySlug, housesData } from "../data/housesData";
 import {
   Users,
   BedDouble,
@@ -196,28 +196,6 @@ export const HouseDetail = ({ onOpenBooking }) => {
                   </Col>
                 ))}
               </Row>
-
-              {/* Ссылка на Яндекс.Диск с полным фотоальбомом */}
-              <div className="p-3 bg-white rounded-4 border shadow-sm d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
-                <div className="d-flex align-items-center gap-3">
-                  <div className="fs-2">📁</div>
-                  <div>
-                    <div className="fw-bold small text-dark">Хотите посмотреть ещё больше фото этого дома?</div>
-                    <div className="text-muted" style={{ fontSize: "0.78rem" }}>
-                      Все комнаты, детали интерьера, террасы и территория в высоком разрешении
-                    </div>
-                  </div>
-                </div>
-                <a
-                  href={house.yandexDiskUrl || YANDEX_DISK_HOUSES_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-success btn-sm rounded-pill px-3 py-2 fw-semibold text-nowrap d-inline-flex align-items-center gap-1"
-                >
-                  <span>Альбом на Яндекс Диске</span>
-                  <ExternalLink size={14} />
-                </a>
-              </div>
             </div>
           </Col>
 
