@@ -1,31 +1,30 @@
 // src/data/housesData.js
 // Данные по домам базы отдыха «БАРецкий»
 
-// Импорт фотографий из ассетов
-import houseSaunaMain from "../assets/new_images/photo_2026-09-06_06-40-40.jpg";
-import houseSauna2 from "../assets/new_images/photo_2026-09-06_06-40-42.jpg";
-import houseSauna3 from "../assets/new_images/photo_2026-09-06_06-40-44.jpg";
-import houseSauna4 from "../assets/new_images/photo_2026-09-06_06-40-45.jpg";
-import saunaSupplies from "../assets/new_images/sauna_supplies.jpg";
-import houseSaunaAlt from "../assets/Houses/house1.jpg";
+// Импорт фотографий из ассетов домов
+import houseSauna1 from "../assets/Houses/houseSaunaMain/photo_1.jpg";
+import houseSauna2 from "../assets/Houses/houseSaunaMain/photo_2.jpg";
+import houseSauna3 from "../assets/Houses/houseSaunaMain/photo_3.jpg";
+import houseSauna4 from "../assets/Houses/houseSaunaMain/photo_4.jpg";
+import houseSauna5 from "../assets/Houses/houseSaunaMain/photo_5.jpg";
 
-import houseJacuzziMain from "../assets/new_images/photo_2026-09-06_06-38-45.jpg";
-import houseJacuzzi2 from "../assets/new_images/photo_2026-09-06_06-38-46.jpg";
-import houseJacuzzi3 from "../assets/new_images/photo_2026-09-06_06-39-07.jpg";
-import houseJacuzzi4 from "../assets/new_images/photo_2026-09-06_06-39-11.jpg";
-import houseJacuzziAlt from "../assets/Houses/house2.jpg";
+import houseJacuzzi1 from "../assets/Houses/houseJacuzziMain/photo_1.jpg";
+import houseJacuzzi2 from "../assets/Houses/houseJacuzziMain/photo_2.jpg";
+import houseJacuzzi3 from "../assets/Houses/houseJacuzziMain/photo_3.jpg";
+import houseJacuzzi4 from "../assets/Houses/houseJacuzziMain/photo_4.jpg";
+import houseJacuzzi5 from "../assets/Houses/houseJacuzziMain/photo_5.jpg";
 
-import houseFamilyMain from "../assets/new_images/photo_2026-09-06_06-38-44.jpg";
-import houseFamily2 from "../assets/new_images/photo_2026-09-06_06-38-58.jpg";
-import houseFamily3 from "../assets/new_images/photo_2026-09-06_06-38-53.jpg";
-import houseFamily4 from "../assets/new_images/photo_2026-09-06_06-39-21.jpg";
-import houseFamilyAlt from "../assets/Houses/house3.jpg";
+import houseFamily1 from "../assets/Houses/houseFamilyMain/photo_1.jpg";
+import houseFamily2 from "../assets/Houses/houseFamilyMain/photo_2.jpg";
+import houseFamily3 from "../assets/Houses/houseFamilyMain/photo_3.jpg";
+import houseFamily4 from "../assets/Houses/houseFamilyMain/photo_4.jpg";
+import houseFamily5 from "../assets/Houses/houseFamilyMain/photo_5.jpg";
 
-import houseRomanticMain from "../assets/new_images/house3_terrace.jpg";
-import houseRomantic2 from "../assets/new_images/photo_2026-09-06_06-40-47.jpg";
-import houseRomantic3 from "../assets/new_images/photo_2026-09-06_06-40-48.jpg";
-import houseRomantic4 from "../assets/new_images/photo_2026-09-06_06-40-23.jpg";
-import houseRomanticAlt from "../assets/Houses/house4.jpg";
+import houseRomantic1 from "../assets/Houses/houseRomanticMain/photo_1.jpg";
+import houseRomantic2 from "../assets/Houses/houseRomanticMain/photo_2.jpg";
+import houseRomantic3 from "../assets/Houses/houseRomanticMain/photo_3.jpg";
+import houseRomantic4 from "../assets/Houses/houseRomanticMain/photo_4.jpg";
+import houseRomantic5 from "../assets/Houses/houseRomanticMain/photo_5.jpg";
 
 // Импорт видеообзоров домов
 import house1Video from "../assets/videos/house1.MOV";
@@ -54,11 +53,11 @@ export const housesData = [
     shortDescription: "Двухэтажный комфортный коттедж с собственной сауной – ваш идеальный уголок для релакса и восстановления сил. Комфорт, уют и целебный пар ждут вас!",
     fullDescription: "Просторный двухэтажный коттедж из натурального дерева, созданный для полноценного отдыха большой семьи или компании близких друзей. Главная изюминка дома — собственная жаркая сауна прямо в коттедже, которой вы можете пользоваться в любое удобное время без ограничений. На первом этаже расположена уютная гостиная с мягким диваном и большим Smart TV, полностью оборудованная кухня и санузел с душевой зоной. На втором этаже — уединенные спальни с панорамными видами на сосновый бор. На собственной придомовой территории оборудована удобная терраса и персональная мангальная зона со всеми принадлежностями для барбекю.",
     images: [
-      { src: houseSaunaMain, alt: "Коттедж с сауной - фото 1" },
-      { src: houseSaunaMain, alt: "Коттедж с сауной - фото 2" },
-      { src: houseSaunaMain, alt: "Коттедж с сауной - фото 3" },
-      { src: houseSaunaMain, alt: "Коттедж с сауной - фото 4" },
-      { src: houseSaunaMain, alt: "Коттедж с сауной - фото 5" },
+      { src: houseSauna1, alt: "Коттедж с сауной - фото 1" },
+      { src: houseSauna2, alt: "Коттедж с сауной - фото 2" },
+      { src: houseSauna3, alt: "Коттедж с сауной - фото 3" },
+      { src: houseSauna4, alt: "Коттедж с сауной - фото 4" },
+      { src: houseSauna5, alt: "Коттедж с сауной - фото 5" },
     ],
     highlights: [
       "Собственная финская сауна прямо в доме",
@@ -109,11 +108,11 @@ export const housesData = [
     shortDescription: "Стильный треугольный дом А-фрейм: современный комфорт, роскошное джакузи, близость к природе и незабываемый расслабляющий отдых.",
     fullDescription: "Невероятно фотогеничный дизайнерский треугольный дом в стиле A-Frame с панорамным треугольным остеклением во всю стену. Главная изюминка — собственное гидромассажное джакузи, где можно насладиться пузырьками и полным расслаблением после насыщенного дня на свежем воздухе. Высокие сводчатые потолки создают ощущение безграничного пространства и свободы. На втором уровне дома находится романтичная спальная зона с видом на макушки сосен. На прилегающей террасе вас ждут шезлонги и зона барбекю.",
     images: [
-      { src: houseJacuzziMain, alt: "А-фрейм с джакузи - фото 1" },
-      { src: houseJacuzziMain, alt: "А-фрейм с джакузи - фото 2" },
-      { src: houseJacuzziMain, alt: "А-фрейм с джакузи - фото 3" },
-      { src: houseJacuzziMain, alt: "А-фрейм с джакузи - фото 4" },
-      { src: houseJacuzziMain, alt: "А-фрейм с джакузи - фото 5" },
+      { src: houseJacuzzi1, alt: "А-фрейм с джакузи - фото 1" },
+      { src: houseJacuzzi2, alt: "А-фрейм с джакузи - фото 2" },
+      { src: houseJacuzzi3, alt: "А-фрейм с джакузи - фото 3" },
+      { src: houseJacuzzi4, alt: "А-фрейм с джакузи - фото 4" },
+      { src: houseJacuzzi5, alt: "А-фрейм с джакузи - фото 5" },
     ],
     highlights: [
       "Гидромассажное джакузи с подсветкой",
@@ -164,11 +163,11 @@ export const housesData = [
     shortDescription: "Просторный дом с большой террасой, подвесными качелями и персональной зоной мангала. Идеально для отдыха дружной семьи или компании.",
     fullDescription: "Уютный и практичный дом, спроектированный с особой заботой о семьях с детьми и дружеских компаниях. Одноэтажная продуманная планировка исключает крутые лестницы, что делает дом максимально безопасным для малышей и пожилых гостей. Просторная деревянная терраса с подвесными качелями станет любимым местом для неторопливого утреннего кофе под щебет птиц или вечерних посиделок на закате. В доме есть полноценная кухня со всем инвентарем для приготовления любимых домашних блюд.",
     images: [
-      { src: houseFamilyMain, alt: "Семейный дом с террасой - фото 1" },
-      { src: houseFamilyMain, alt: "Семейный дом с террасой - фото 2" },
-      { src: houseFamilyMain, alt: "Семейный дом с террасой - фото 3" },
-      { src: houseFamilyMain, alt: "Семейный дом с террасой - фото 4" },
-      { src: houseFamilyMain, alt: "Семейный дом с террасой - фото 5" },
+      { src: houseFamily1, alt: "Семейный дом с террасой - фото 1" },
+      { src: houseFamily2, alt: "Семейный дом с террасой - фото 2" },
+      { src: houseFamily3, alt: "Семейный дом с террасой - фото 3" },
+      { src: houseFamily4, alt: "Семейный дом с террасой - фото 4" },
+      { src: houseFamily5, alt: "Семейный дом с террасой - фото 5" },
     ],
     highlights: [
       "Широкая деревянная терраса с подвесными качелями",
@@ -219,11 +218,11 @@ export const housesData = [
     shortDescription: "Уютный романтический домик для двоих с большой террасой и качелями. Место, где время останавливается и слышна только природа.",
     fullDescription: "Идеальное гнездышко для пары, желающей сбежать от городской суеты, шума мегаполиса и бесконечных уведомлений. Домик расположен в тихой, наиболее уединенной части базы отдыха прямо у границы лесного массива. Вас ждут панорамные окна с видом на вековые деревья, уютная двуспальная кровать с мягким белоснежным бельем, капельная тишина и свежий хвойный воздух. На открытой террасе подвешены удобные качели, где так приятно встречать рассвет с чашкой ароматного кофе или пить чай под пледом звездными вечерами.",
     images: [
-      { src: houseRomanticMain, alt: "Дом для двоих с качелями - фото 1" },
-      { src: houseRomanticMain, alt: "Дом для двоих с качелями - фото 2" },
-      { src: houseRomanticMain, alt: "Дом для двоих с качелями - фото 3" },
-      { src: houseRomanticMain, alt: "Дом для двоих с качелями - фото 4" },
-      { src: houseRomanticMain, alt: "Дом для двоих с качелями - фото 5" },
+      { src: houseRomantic1, alt: "Дом для двоих с качелями - фото 1" },
+      { src: houseRomantic2, alt: "Дом для двоих с качелями - фото 2" },
+      { src: houseRomantic3, alt: "Дом для двоих с качелями - фото 3" },
+      { src: houseRomantic4, alt: "Дом для двоих с качелями - фото 4" },
+      { src: houseRomantic5, alt: "Дом для двоих с качелями - фото 5" },
     ],
     highlights: [
       "Максимальное уединение на опушке леса",

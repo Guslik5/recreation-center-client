@@ -75,9 +75,9 @@ export const Footer = () => {
                             <img src={phoneIcon} alt="phone" width="14" height="14" className="me-2 flex-shrink-0" />
                             <span>Бронь: <strong className="text-white">8 911 968 82 69</strong></span>
                         </a>
-                        <a className="footer-phone-link" href="tel:+79117759163">
+                        <a className="footer-phone-link" href="tel:+79117753497">
                             <img src={phoneIcon} alt="phone" width="14" height="14" className="me-2 flex-shrink-0" />
-                            <span>Управл. Валерия: <strong className="text-white">8 911 775 91 63</strong></span>
+                            <span>Управл. Валерия: <strong className="text-white">8 911 775 34 97</strong></span>
                         </a>
                     </Col>
 

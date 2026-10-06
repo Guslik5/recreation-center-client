@@ -344,7 +344,7 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
             </a>
           </div>
           <p className="text-muted small mb-0">
-            Также доступна связь с управляющей Валерией: <a href="tel:+79117759163" className="text-dark fw-bold text-decoration-none">8 911 775 91 63</a> или через <a href="https://wa.me/79119688269" target="_blank" rel="noopener noreferrer" className="text-success fw-bold text-decoration-none">WhatsApp</a>.
+            Также доступна связь с управляющей Валерией: <a href="tel:+79117753497" className="text-dark fw-bold text-decoration-none">8 911 775 34 97</a> или через <a href="https://wa.me/79119688269" target="_blank" rel="noopener noreferrer" className="text-success fw-bold text-decoration-none">WhatsApp</a>.
           </p>
         </div>
       ),

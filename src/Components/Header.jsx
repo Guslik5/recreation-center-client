@@ -138,11 +138,11 @@ export default function Header({ onOpenBooking }) {
                             </a>
                             <a
                                 className="header-phone-link"
-                                href="tel:+79117759163"
+                                href="tel:+79117753497"
                                 title="Управляющая Валерия"
                             >
                                 <img src={phoneIcon} alt="phone" width="13" height="13" className="me-1" />
-                                <span>Управл. Валерия: <strong className="text-white">8 911 775 91 63</strong></span>
+                                <span>Управл. Валерия: <strong className="text-white">8 911 775 34 97</strong></span>
                             </a>
                         </div>
 

@@ -478,8 +478,8 @@ export const HouseDetail = ({ onOpenBooking }) => {
                   <a href="tel:+79119688269" className="text-success fw-bold text-decoration-none">
                     📞 8 911 968 82 69 (Бронирование)
                   </a>
-                  <a href="tel:+79117759163" className="text-dark text-decoration-none">
-                    📞 8 911 775 91 63 (Управляющая Валерия)
+                  <a href="tel:+79117753497" className="text-dark text-decoration-none">
+                    📞 8 911 775 34 97 (Управляющая Валерия)
                   </a>
                   <a
                     href="https://wa.me/79119688269"
