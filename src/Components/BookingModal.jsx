@@ -97,14 +97,14 @@ export const BookingModal = ({ show, onHide, initialHouseSlug, initialService })
 
     try {
       // 1. Сохранение в Firestore
-      await addDoc(collection(db, "bookings"), bookingData);
+      const docRef = await addDoc(collection(db, "bookings"), bookingData);
 
       // 2. Отправка вебхука / уведомления на бот-сервис, если он доступен
       try {
         await fetch("/api/notify-booking", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(bookingData),
+          body: JSON.stringify({ ...bookingData, id: docRef.id }),
         });
       } catch (err) {
         // Бот-сервис может быть на другом порту или в процессе запуска, Firestore является надежным источником
