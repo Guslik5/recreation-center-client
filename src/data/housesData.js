@@ -93,7 +93,7 @@ export const housesData = [
   {
     id: 2,
     slug: "a-frame-with-jacuzzi",
-    video: house2Video,
+    video: house3Video,
     title: "А-фрейм с джакузи",
     fullTitle: "Стильный треугольный А-фрейм с горячим гидромассажным джакузи",
     badge: "Хит для фотосессий",
@@ -148,7 +148,7 @@ export const housesData = [
   {
     id: 3,
     slug: "family-house-with-terrace",
-    video: house3Video,
+    video: house2Video,
     title: "Семейный дом с террасой",
     fullTitle: "Просторный семейный дом с большой террасой и подвесной качелью",
     badge: "Для дружной семьи",
