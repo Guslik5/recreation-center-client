@@ -43,28 +43,58 @@ export default function SliderPhotos() {
     ];
 
     return (
-        <Container className="p-5 border-bottom" >
-            <Row>
-                <Col md={6} className="d-flex flex-column justify-content-center px-5">
-                    <h2 className="mb-4" style={{maxWidth:"300px"}}>Ваш комфорт – наша забота.</h2>
-                    <p style={{maxWidth: "300px"}}>
-                        Мы создаем пространство,
-                        где вы можете просто расслабиться и
-                        наслаждаться каждым моментом.
+        <Container className="p-5 border-bottom">
+            <style>{`
+                .slider-photo-frame {
+                    height: 520px;
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: #f3f4f6;
+                    border-radius: 2rem;
+                }
+                @media (max-width: 991px) {
+                    .slider-photo-frame {
+                        height: 420px;
+                    }
+                }
+                @media (max-width: 576px) {
+                    .slider-photo-frame {
+                        height: 340px;
+                        border-radius: 1.5rem;
+                    }
+                }
+            `}</style>
+            <Row className="align-items-center g-4">
+                <Col md={6} className="d-flex flex-column justify-content-center px-lg-5">
+                    <h2 className="mb-4 fw-bold text-dark" style={{ maxWidth: "340px" }}>
+                        Ваш комфорт – наша забота.
+                    </h2>
+                    <p className="text-muted" style={{ maxWidth: "340px", lineHeight: "1.7" }}>
+                        Мы создаем пространство, где вы можете просто расслабиться и
+                        наслаждаться каждым моментом в окружении природы.
                     </p>
                 </Col>
                 <Col md={6}>
-                    <Carousel activeIndex={index} onSelect={handleSelect}>
-                        {images.map((image, i) => (
-                            <Carousel.Item key={i}>
-                                <img
-                                    className="d-block w-100 rounded-5"
-                                    src={image.src}
-                                    alt={image.alt}
-                                />
-                            </Carousel.Item>
-                        ))}
-                    </Carousel>
+                    <div className="shadow-sm" style={{ maxWidth: "480px", margin: "0 auto" }}>
+                        <Carousel activeIndex={index} onSelect={handleSelect} interval={4500}>
+                            {images.map((image, i) => (
+                                <Carousel.Item key={i}>
+                                    <div className="slider-photo-frame">
+                                        <img
+                                            className="d-block w-100 h-100"
+                                            style={{
+                                                objectFit: "cover",
+                                                objectPosition: "center",
+                                                display: "block"
+                                            }}
+                                            src={image.src}
+                                            alt={image.alt || `Фото ${i + 1}`}
+                                        />
+                                    </div>
+                                </Carousel.Item>
+                            ))}
+                        </Carousel>
+                    </div>
                 </Col>
             </Row>
         </Container>

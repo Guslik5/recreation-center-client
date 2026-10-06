@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import photoSign from "../assets/new_images/photo_2026-09-06_06-40-23.jpg";
-import photoTerritory from "../assets/new_images/photo_2026-09-06_06-39-07.jpg";
-import photoPlayground from "../assets/new_images/photo_2026-09-06_06-39-41.jpg";
-import photoPorch from "../assets/new_images/photo_2026-09-06_06-38-58.jpg";
-import photoWelcome from "../assets/new_images/photo_2026-09-06_06-39-21.jpg";
-import photoSup from "../assets/new_images/photo_2026-09-06_06-40-47.jpg";
+import photoSign from "../assets/photoCollage/photo1.jpg";
+import photoTerritory from "../assets/photoCollage/photo2.jpg";
+import photoPlayground from "../assets/photoCollage/photo3.jpg";
+import photoPorch from "../assets/photoCollage/photo4.jpg";
+import photoWelcome from "../assets/photoCollage/photo5.jpg";
+import photoSup from "../assets/photoCollage/photo6.jpg";
 
 export const PhotoCollage = () => {
     const photos = [

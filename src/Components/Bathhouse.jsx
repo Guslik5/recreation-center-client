@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Col, Container, Row, Badge, Button } from "react-bootstrap";
 import photoPanorama from "../assets/new_images/photo_2026-09-06_06-38-50.jpg";
-import photoFacade from "../assets/new_images/photo_2026-09-06_06-38-46.jpg";
+import photoFacade from "../assets/BaptismalFont/photo4.jpg";
 import photoInterior from "../assets/Bathhouse/photo4.jpg";
 import furakoPhoto1 from "../assets/BaptismalFont/photo1.jpg";
 import furakoPhoto2 from "../assets/BaptismalFont/photo2.jpg";
