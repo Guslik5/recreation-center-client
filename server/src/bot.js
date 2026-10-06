@@ -110,16 +110,16 @@ export async function sendBookingNotification(booking) {
 
   const rawDigits = (booking.phone || "").replace(/\D/g, "");
   const waUrl = rawDigits ? `https://wa.me/${rawDigits}` : null;
-  const telUrl = rawDigits ? `tel:+${rawDigits}` : null;
+  const tgUrl = rawDigits ? `https://t.me/+${rawDigits}` : null;
 
   const inlineKeyboard = [];
   const actionRow = [];
 
-  if (telUrl) {
-    actionRow.push({ text: `📞 Позвонить`, url: telUrl });
-  }
   if (waUrl) {
     actionRow.push({ text: `💬 WhatsApp`, url: waUrl });
+  }
+  if (tgUrl) {
+    actionRow.push({ text: `✈️ Telegram`, url: tgUrl });
   }
   if (actionRow.length > 0) {
     inlineKeyboard.push(actionRow);
