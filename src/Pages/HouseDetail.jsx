@@ -221,12 +221,15 @@ export const HouseDetail = ({ onOpenBooking }) => {
                     <CheckCircle2 size={18} />
                     <span>В стоимость дома уже включено:</span>
                   </div>
-                  <ul className="text-muted small mb-0 ps-3" style={{ lineHeight: "1.6" }}>
-                    <li>Пользование собственной мангальной зоной (шампуры, решетка)</li>
+                  <ul className="text-muted small mb-2 ps-3" style={{ lineHeight: "1.6" }}>
+                    <li>Пользование собственной мангальной зоной у дома</li>
                     <li>Постельное белье, банные полотенца и гигиенические наборы</li>
-                    <li>Мини-бар с напитками и снеками</li>
+                    <li>Высокоскоростной Wi-Fi, Smart TV и парковочное место</li>
                     <li>Детская кроватка и стульчик для кормления — бесплатно</li>
                   </ul>
+                  <div className="text-muted small pt-2 border-top border-success-subtle" style={{ fontSize: "0.78rem" }}>
+                    ℹ️ <em>Мини-бар присутствует в доме, но не включен в стоимость. Шампуры и решетка не включены в стоимость (можно взять у администратора или привезти свои).</em>
+                  </div>
                 </div>
 
                 {/* Параметры дома в цифрах */}

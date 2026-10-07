@@ -9,7 +9,7 @@ export const Houses = ({ onOpenBooking }) => {
       <div className="text-center mb-4 px-3">
         <h2 className="fs-1 fw-bold mb-2">Наши дома</h2>
         <p className="text-muted mx-auto mb-3" style={{ maxWidth: "720px" }}>
-          Цены указаны за сутки проживания. В каждом доме есть мини-бар, вся необходимая посуда и гигиенические принадлежности.
+          Цены указаны за сутки проживания. В каждом доме присутствует мини-бар (не включен в стоимость), вся необходимая посуда и гигиенические принадлежности.
         </p>
         <div className="d-flex justify-content-center gap-2 flex-wrap mb-2">
           <span className="badge bg-success py-2 px-3 fw-normal fs-6">

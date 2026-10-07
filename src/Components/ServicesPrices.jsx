@@ -230,7 +230,7 @@ export const ServicesPrices = ({ onOpenBooking }) => {
                                 👶 Детские кроватки, стульчики - бесплатно
                             </Badge>
                             <Badge bg="dark" className="p-1 fs-6 fw-normal">
-                                ✨ В каждом доме есть мини-бар
+                                ✨ Мини-бар в каждом доме (не включен в стоимость)
                             </Badge>
                         </div>
                     </div>
@@ -283,7 +283,8 @@ export const ServicesPrices = ({ onOpenBooking }) => {
 
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-3 border-top">
                         <div className="text-muted small text-center text-md-start">
-                            В стоимость каждого дома входит: мангал, постельное белье, полотенца, оборудованная кухня, Wi-Fi и парковка.
+                            В стоимость каждого дома входит: мангал (шампуры и решетка не включены в стоимость), постельное белье, полотенца, оборудованная кухня, Wi-Fi и парковка.
+                            Мини-бар присутствует в каждом доме, но не включен в стоимость.
                             Детские стульчики и кроватки предоставляются бесплатно по запросу.
                         </div>
                         <div className="d-flex flex-wrap gap-2 justify-content-center">

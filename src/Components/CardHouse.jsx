@@ -43,8 +43,8 @@ export const CardHouse = ({
               {capacity}
             </Badge>
           )}
-          <Badge bg="secondary" className="px-2 py-1 fw-normal">
-            Есть мини-бар
+          <Badge bg="secondary" className="px-2 py-1 fw-normal" title="Мини-бар присутствует в доме (не включен в стоимость)">
+            Мини-бар (не вкл. в стоимость)
           </Badge>
         </div>
 
