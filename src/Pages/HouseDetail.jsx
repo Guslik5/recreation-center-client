@@ -207,7 +207,11 @@ export const HouseDetail = ({ onOpenBooking }) => {
                   <div>
                     <span className="text-muted small">Стоимость проживания:</span>
                     <div className="fs-2 fw-bold text-success lh-1 mt-1">
-                      {house.price}
+                      {house.price.toLowerCase().startsWith("цена")
+                        ? house.price
+                        : (house.price.toLowerCase().startsWith("от")
+                            ? `Цена ${house.price}`
+                            : `Цена от ${house.price}`)}
                     </div>
                     <span className="text-muted small">за 1 сутки</span>
                   </div>
@@ -451,15 +455,15 @@ export const HouseDetail = ({ onOpenBooking }) => {
                   Дополните ваш отдых в домике настоящей русской парной на березовых дровах и горячим уличным чаном под открытым небом!
                 </p>
                 <div className="p-2 rounded-3 bg-light border small text-muted mb-3">
-                  <div>🔥 <strong>Баня на дровах:</strong> 4 500 ₽ (4–5 часов)</div>
-                  <div>♨️ <strong>Баня + Фурако:</strong> 10 500 ₽ (комплекс)</div>
+                  <div>🔥 <strong>Баня на дровах:</strong> Цена от 4 500 ₽ (4–5 часов)</div>
+                  <div>♨️ <strong>Баня + Фурако:</strong> Цена от 10 500 ₽ (комплекс)</div>
                 </div>
                 <Button
                   variant="outline-success"
                   className="rounded-pill py-2 fw-semibold small"
                   onClick={() => {
                     if (onOpenBooking) {
-                      onOpenBooking(null, "Баня + Купель Фурако (10 500 ₽)");
+                      onOpenBooking(null, "Баня + Купель Фурако (от 10 500 ₽)");
                     } else {
                       window.location.href = "tel:+79119688269";
                     }
@@ -545,7 +549,13 @@ export const HouseDetail = ({ onOpenBooking }) => {
                     </div>
                     <div>
                       <div className="d-flex justify-content-between align-items-center mb-2">
-                        <span className="fs-5 fw-bold text-success">{other.price}</span>
+                        <span className="fs-5 fw-bold text-success">
+                          {other.price.toLowerCase().startsWith("цена")
+                            ? other.price
+                            : (other.price.toLowerCase().startsWith("от")
+                                ? `Цена ${other.price}`
+                                : `Цена от ${other.price}`)}
+                        </span>
                         <span className="text-muted small">за сутки</span>
                       </div>
                       <Link

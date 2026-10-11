@@ -174,7 +174,7 @@ export const Bathhouse = ({ onOpenBooking }) => {
                                     🏡 Только баня на дровах
                                 </div>
                                 <div className="text-end">
-                                    <div className="fs-5 fw-bold" style={{ color: "#2e7d32" }}>4 500 ₽</div>
+                                    <div className="fs-5 fw-bold" style={{ color: "#2e7d32" }}>Цена от 4 500 ₽</div>
                                     <span className="text-muted" style={{ fontSize: "0.75rem" }}>сеанс 4–5 часов</span>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@ export const Bathhouse = ({ onOpenBooking }) => {
                                 </div>
                             </div>
                             <div className="d-flex align-items-baseline gap-2 mb-2">
-                                <span className="fs-4 fw-bold" style={{ color: "#198754" }}>10 500 ₽</span>
+                                <span className="fs-4 fw-bold" style={{ color: "#198754" }}>Цена от 10 500 ₽</span>
                                 <span className="text-muted small">/ сеанс 4–5 часов (комплекс)</span>
                             </div>
                             <p className="text-muted small mb-0">
@@ -207,7 +207,7 @@ export const Bathhouse = ({ onOpenBooking }) => {
                             <div className="d-flex align-items-start gap-2">
                                 <span className="fs-5">⚠️</span>
                                 <div className="small text-dark">
-                                    <strong>Обратите внимание:</strong> отдельно купель Фурако не предоставляется — бронирование возможно только в комплексе <strong>«Баня + Фурако» (10 500 ₽)</strong> либо <strong>«Только баня» (4 500 ₽)</strong>.
+                                    <strong>Обратите внимание:</strong> отдельно купель Фурако не предоставляется — бронирование возможно только в комплексе <strong>«Баня + Фурако» (от 10 500 ₽)</strong> либо <strong>«Только баня» (от 4 500 ₽)</strong>.
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ export const Bathhouse = ({ onOpenBooking }) => {
                                 className="custom-button-green w-100 py-2 rounded-3 text-white fw-semibold"
                                 onClick={() => {
                                     if (onOpenBooking) {
-                                        onOpenBooking(null, "Баня + Купель Фурако (10 500 ₽)");
+                                        onOpenBooking(null, "Баня + Купель Фурако (от 10 500 ₽)");
                                     } else {
                                         window.location.href = "tel:+79119688269";
                                     }
@@ -239,31 +239,31 @@ export const Bathhouse = ({ onOpenBooking }) => {
                             <div className="row g-1 small text-muted">
                                 <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Аренда полотенца:</span>
-                                    <strong className="text-dark">300 ₽</strong>
+                                    <strong className="text-dark">от 300 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Дубовый веник:</span>
-                                    <strong className="text-dark">800 ₽</strong>
+                                    <strong className="text-dark">от 800 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Березовый веник:</span>
-                                    <strong className="text-dark">700 ₽</strong>
+                                    <strong className="text-dark">от 700 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Арома-масла:</span>
-                                    <strong className="text-dark">350 ₽</strong>
+                                    <strong className="text-dark">от 350 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Дрова 7 шт.:</span>
-                                    <strong className="text-dark">300 ₽</strong>
+                                    <strong className="text-dark">от 300 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between ps-2">
                                     <span>Древесный уголь:</span>
-                                    <strong className="text-dark">350 ₽</strong>
+                                    <strong className="text-dark">от 350 ₽</strong>
                                 </div>
                                 <div className="col-6 d-flex justify-content-between pe-2">
                                     <span>Розжиг:</span>
-                                    <strong className="text-dark">300 ₽</strong>
+                                    <strong className="text-dark">от 300 ₽</strong>
                                 </div>
                             </div>
                         </div>

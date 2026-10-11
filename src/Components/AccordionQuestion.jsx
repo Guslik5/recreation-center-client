@@ -57,25 +57,25 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
             <div className="col-sm-6">
               <div className="p-3 rounded-3 bg-light border">
                 <div className="fw-bold text-dark mb-1">🏡 Коттедж с сауной (до 8 чел.)</div>
-                <div className="text-muted small">8 500 ₽/сут • Финская сауна внутри, 2 этажа, просторная гостиная</div>
+                <div className="text-muted small">от 8 500 ₽/сут • Финская сауна внутри, 2 этажа, просторная гостиная</div>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="p-3 rounded-3 bg-light border">
                 <div className="fw-bold text-dark mb-1">📐 А-фрейм с джакузи (до 5 чел.)</div>
-                <div className="text-muted small">6 500 ₽/сут • Панорамное остекление, спальный лофт, джакузи</div>
+                <div className="text-muted small">от 6 500 ₽/сут • Панорамное остекление, спальный лофт, джакузи</div>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="p-3 rounded-3 bg-light border">
                 <div className="fw-bold text-dark mb-1">☀️ Семейный дом с террасой (до 4 чел.)</div>
-                <div className="text-muted small">6 500 ₽/сут • Без крутых лестниц, качели, мангал, идеален для детей</div>
+                <div className="text-muted small">от 6 500 ₽/сут • Без крутых лестниц, качели, мангал, идеален для детей</div>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="p-3 rounded-3 bg-light border">
                 <div className="fw-bold text-dark mb-1">🌿 Дом для двоих с качелями (до 2 чел.)</div>
-                <div className="text-muted small">4 500 ₽/сут • Уединение у границы леса, открытая терраса с качелями</div>
+                <div className="text-muted small">от 4 500 ₽/сут • Уединение у границы леса, открытая терраса с качелями</div>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
             <li><strong>Детские кроватки и стульчики для кормления — бесплатно по запросу!</strong></li>
           </ul>
           <div className="p-3 rounded-3 bg-success bg-opacity-10 border border-success border-opacity-25 text-success small">
-            <strong>💡 Дополнительные гости:</strong> если в дом на 4 человек приезжает 5 гостей — доплата за каждого дополнительного гостя составляет <strong>1 000 ₽ / сутки</strong>.
+            <strong>💡 Дополнительные гости:</strong> если в дом на 4 человек приезжает 5 гостей — доплата за каждого дополнительного гостя составляет <strong>от 1 000 ₽ / сутки</strong>.
           </div>
         </div>
       ),
@@ -129,7 +129,7 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
             <div className="col-sm-6">
               <div className="p-3 rounded-3 bg-white border shadow-sm h-100">
                 <div className="fw-bold text-dark fs-6 mb-1">🏡 Только баня на дровах</div>
-                <div className="text-success fw-bold fs-5 mb-2">4 500 ₽ <span className="text-muted fs-6 fw-normal">/ 4–5 часов</span></div>
+                <div className="text-success fw-bold fs-5 mb-2">Цена от 4 500 ₽ <span className="text-muted fs-6 fw-normal">/ 4–5 часов</span></div>
                 <p className="text-muted small mb-0">Русская парная до 6 человек. Чистые банные шапки выдаются бесплатно. Обливное ведро-водопад на террасе.</p>
               </div>
             </div>
@@ -137,25 +137,25 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
               <div className="p-3 rounded-3 bg-white border border-success border-2 shadow-sm h-100 position-relative">
                 <Badge bg="success" className="position-absolute top-0 end-0 m-2 px-2 py-1 fw-normal">Премиум</Badge>
                 <div className="fw-bold text-dark fs-6 mb-1">♨️ Баня + Купель Фурако</div>
-                <div className="text-success fw-bold fs-5 mb-2">10 500 ₽ <span className="text-muted fs-6 fw-normal">/ 4–5 часов</span></div>
+                <div className="text-success fw-bold fs-5 mb-2">Цена от 10 500 ₽ <span className="text-muted fs-6 fw-normal">/ 4–5 часов</span></div>
                 <p className="text-muted small mb-0">Полный комплекс отдыха: 4–5 часов жаркой бани и горячего чана из натурального дерева под открытым небом.</p>
               </div>
             </div>
           </div>
           <div className="p-3 rounded-3 mb-3" style={{ backgroundColor: "#FFF9E6", border: "1px solid #FFE082" }}>
             <div className="small text-dark">
-              <strong>⚠️ Важно:</strong> отдельно купель Фурако не растапливается — доступен только комплекс <strong>«Баня + Фурако» (10 500 ₽)</strong> либо <strong>«Только баня» (4 500 ₽)</strong>.
+              <strong>⚠️ Важно:</strong> отдельно купель Фурако не растапливается — доступен только комплекс <strong>«Баня + Фурако» (от 10 500 ₽)</strong> либо <strong>«Только баня» (от 4 500 ₽)</strong>.
             </div>
           </div>
           <div className="p-3 rounded-3 bg-light border small text-muted">
             <div className="fw-bold text-dark mb-2">🌿 Банные товары у администратора:</div>
             <div className="row g-1">
-              <div className="col-6">Аренда полотенца — 300 ₽</div>
-              <div className="col-6">Дубовый веник — 800 ₽</div>
-              <div className="col-6">Березовый веник — 700 ₽</div>
-              <div className="col-6">Арома-масла — 350 ₽</div>
-              <div className="col-6">Дрова (7 шт.) — 300 ₽</div>
-              <div className="col-6">Уголь и розжиг — по 300–350 ₽</div>
+              <div className="col-6">Аренда полотенца — от 300 ₽</div>
+              <div className="col-6">Дубовый веник — от 800 ₽</div>
+              <div className="col-6">Березовый веник — от 700 ₽</div>
+              <div className="col-6">Арома-масла — от 350 ₽</div>
+              <div className="col-6">Дрова (7 шт.) — от 300 ₽</div>
+              <div className="col-6">Уголь и розжиг — от 300–350 ₽</div>
             </div>
           </div>
         </div>
@@ -176,19 +176,19 @@ export const AccordionQuestions = ({ onOpenBooking }) => {
           <div className="d-flex flex-column gap-2 small text-muted mb-3">
             <div className="p-2 rounded-3 bg-light border d-flex justify-content-between align-items-center">
               <div>🎯 <strong>Тир (пистолет):</strong> 100 пулек + 2 мишени</div>
-              <strong className="text-dark">1 000 ₽</strong>
+              <strong className="text-dark">от 1 000 ₽</strong>
             </div>
             <div className="p-2 rounded-3 bg-light border d-flex justify-content-between align-items-center">
               <div>🎯 <strong>Тир (охотничья винтовка 4 Дж):</strong> 100 пулек + 2 мишени</div>
-              <strong className="text-dark">1 500 ₽</strong>
+              <strong className="text-dark">от 1 500 ₽</strong>
             </div>
             <div className="p-2 rounded-3 bg-light border d-flex justify-content-between align-items-center">
               <div>🎯 <strong>Комбо Тир (винтовка + пистолет):</strong> 200 пулек + 4 мишени</div>
-              <strong className="text-dark">2 400 ₽</strong>
+              <strong className="text-dark">от 2 400 ₽</strong>
             </div>
             <div className="p-2 rounded-3 bg-light border d-flex justify-content-between align-items-center">
               <div>💨 <strong>Аренда кальяна:</strong> кальян + уголь + табак + фольга (безлимит)</div>
-              <strong className="text-dark">2 000 ₽</strong>
+              <strong className="text-dark">от 2 000 ₽</strong>
             </div>
             <div className="p-2 rounded-3 bg-light border d-flex justify-content-between align-items-center">
               <div>🤸 <strong>Батут и детская площадка:</strong> для проживающих гостей</div>

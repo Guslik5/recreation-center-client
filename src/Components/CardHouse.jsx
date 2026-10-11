@@ -63,16 +63,20 @@ export const CardHouse = ({
         {price && (
           <div className="mb-2">
             <div className="fs-4 fw-bold" style={{ color: "#2e7d32" }}>
-              {price}
+              {price.toLowerCase().startsWith("цена")
+                ? price
+                : (price.toLowerCase().startsWith("от")
+                    ? `Цена ${price}`
+                    : `Цена от ${price}`)}
             </div>
             <div className="text-muted" style={{ fontSize: "0.8rem" }}>
-              Цена указана за сутки
+              указана за сутки
             </div>
           </div>
         )}
 
         <div className="text-muted mb-3" style={{ fontSize: "0.75rem", lineHeight: "1.3" }}>
-          Доп. гость: +1 000 ₽/сут • Кроватка/стульчик: бесплатно
+          Доп. гость: от 1 000 ₽/сут • Кроватка/стульчик: бесплатно
         </div>
 
         {/* Две кнопки: "Подробнее о домике" и "Забронировать" */}

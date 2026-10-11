@@ -16,7 +16,7 @@ export const Houses = ({ onOpenBooking }) => {
             👶 Детские кроватки и стульчики — бесплатно
           </span>
           <span className="badge bg-light text-dark border py-2 px-3 fw-normal fs-6">
-            👥 Доплата за доп. гостя — 1 000 ₽ / сутки
+            👥 Доплата за доп. гостя — от 1 000 ₽ / сутки
           </span>
         </div>
       </div>
